@@ -5,7 +5,7 @@ import type { Aluno as AlunoType } from "../types";
 import { useSound } from "../hooks/useSounds";
 import "./styles/Aluno.css";
 
-const API_BASE_URL = "http://localhost:8080/api";
+const API_BASE_URL = `${window.location.origin}/bytecraft/api`;
 
 import backgroundAluno from "../assets/backgrounds/background_aluno.png";
 import voltarIcon from "../assets/bottons/botao_voltar.png";

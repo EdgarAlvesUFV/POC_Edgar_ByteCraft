@@ -25,7 +25,7 @@ function App() {
   return (
     <SoundProvider>
       <DndProvider options={HTML5toTouch}>
-        <Router>
+        <Router basename="/bytecraft">
           {/* 🔊 Botão de áudio global (fica fixo no canto inferior direito) */}
           <SoundButton />
 
