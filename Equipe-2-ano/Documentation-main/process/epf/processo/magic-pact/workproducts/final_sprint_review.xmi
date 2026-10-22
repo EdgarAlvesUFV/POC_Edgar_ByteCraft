@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-59npogBBtr9N4JJc7nZcPg" name="sprint_review,_7-mWoCAREe67Xue8GEjBvA" guid="-59npogBBtr9N4JJc7nZcPg" changeDate="2023-08-27T12:09:03.392-0300">
+  <mainDescription>&lt;p>&#xD;
+    A Sprint Review reúne os membros&amp;nbsp;do projeto&amp;nbsp;para coletar o feedback necessário para a próxima sprint,&#xD;
+    reunindo tudo que foi gerado pela sprint atual&amp;nbsp;e enviando as métricas dos alunos para os professores de cada&#xD;
+    matéria.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Nessa reunião, o resultado da sprint de Modelagem é coletado, junto ao feedback, para que o Líder do Projeto possa&#xD;
+    preparar a próxima reunião de Sprint Planning.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Objetivo é assimilar todas as informações obtidas na sprint, preparando o próximo ciclo de desenvolvimento.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

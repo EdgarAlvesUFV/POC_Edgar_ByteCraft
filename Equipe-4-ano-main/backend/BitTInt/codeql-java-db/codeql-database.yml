@@ -1,0 +1,45 @@
+---
+sourceLocationPrefix: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-4-ano-main\backend\BitTInt
+baselineLinesOfCode: 375
+unicodeNewlines: false
+columnKind: utf16
+primaryLanguage: java
+inProgress:
+  primaryLanguage: java
+  installedExtractors:
+    actions:
+     - C:/Users/Edgar/Downloads/TCC/codeql/actions
+    cpp:
+     - C:/Users/Edgar/Downloads/TCC/codeql/cpp
+    csharp:
+     - C:/Users/Edgar/Downloads/TCC/codeql/csharp
+    csv:
+     - C:/Users/Edgar/Downloads/TCC/codeql/csv
+    go:
+     - C:/Users/Edgar/Downloads/TCC/codeql/go
+    html:
+     - C:/Users/Edgar/Downloads/TCC/codeql/html
+    java:
+     - C:/Users/Edgar/Downloads/TCC/codeql/java
+    javascript:
+     - C:/Users/Edgar/Downloads/TCC/codeql/javascript
+    properties:
+     - C:/Users/Edgar/Downloads/TCC/codeql/properties
+    python:
+     - C:/Users/Edgar/Downloads/TCC/codeql/python
+    ruby:
+     - C:/Users/Edgar/Downloads/TCC/codeql/ruby
+    rust:
+     - C:/Users/Edgar/Downloads/TCC/codeql/rust
+    swift:
+     - C:/Users/Edgar/Downloads/TCC/codeql/swift
+    xml:
+     - C:/Users/Edgar/Downloads/TCC/codeql/xml
+    yaml:
+     - C:/Users/Edgar/Downloads/TCC/codeql/yaml
+creationMetadata:
+  cliVersion: 2.23.8
+  creationTime: 2026-05-18T00:00:22.186028400Z
+overlayBaseDatabase: false
+overlayDatabase: false
+finalised: false

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-WcDh1_ZWgc6l8njYpZlgWw" name="analista_de_qualidade,_BVNmMD4zEe6bH5sI67MJGA" guid="-WcDh1_ZWgc6l8njYpZlgWw" changeDate="2023-08-23T11:03:15.894-0300">
+  <mainDescription>&lt;p>&#xD;
+    Responsável pela padronização de procedimentos e artefatos, assim como o planejamento e realização de testes de&#xD;
+    desempenho, usabilidade e funcionais.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deve se atentar à criação de issues no GitHub&amp;nbsp;que dizem respeito aos testes realizados nos produtos das sprints de&#xD;
+    refinamento e desenvolvimento.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

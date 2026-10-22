@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-z09tOJ4XPJR4EW6lBSJjWA" name="refinamento_de_anlise,_mOFzMGsSEe-5re5CZ8al7Q" guid="-z09tOJ4XPJR4EW6lBSJjWA" changeDate="2024-09-04T20:11:26.142-0300">
+  <mainDescription>O refinamento de analise é uma atividade crucial que ocorre após o refinamento de requisitos e antes do refinamento de&#xD;
+design. Seu objetivo principal é aprimorar a análise do sistema, aprofundando a análise e detalhando a arquitetura e os&#xD;
+componentes. Durante essa etapa, são revisados os artefatos de análise existentes, buscando identificar oportunidades de&#xD;
+melhoria, otimização e simplificação.</mainDescription>
+  <keyConsiderations>Ao final desse processo, espera-se ter uma análise refinada, bem estruturada e eficiente, que servirá como base sólida para&#xD;
+a implementação do sistema.</keyConsiderations>
+</org.eclipse.epf.uma:TaskDescription>

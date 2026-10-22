@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-kKD9AOA8ivhtrNJFPnvYGw" name="plantao_tecnico,_DybTcGsWEe-5re5CZ8al7Q" guid="-kKD9AOA8ivhtrNJFPnvYGw" authors="João G. A. Bradachi, Maria E. P. Braga, Ana F. Bonfim, Kelvin F. Veloso" changeDate="2024-09-04T20:34:55.157-0300">
+  <purpose>O objetivo principal desta tarefa é justamente auxiliar os desenvolvedores juniors como em uma monitoria, mas de forma&#xD;
+reduzida e flexível para o desenvolvedor senior.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

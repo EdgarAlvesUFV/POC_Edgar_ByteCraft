@@ -1,0 +1,2 @@
+INSERT INTO Stages(name, number, created_at, updated_at, is_active) VALUES ('TESTE', 10, NOW(), NOW(), 1);
+INSERT INTO Stages(name, number, created_at, updated_at, is_active) VALUES ('TESTE 2', 11, NOW(), NOW(), 1);

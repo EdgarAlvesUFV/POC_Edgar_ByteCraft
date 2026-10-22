@@ -1,0 +1,3 @@
+DELETE FROM Stages;
+DELETE FROM Users;
+DELETE FROM UserProgress;

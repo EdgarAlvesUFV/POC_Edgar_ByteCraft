@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-YeIzYa5zMar6ZvQ2JLqxig" name="new_role_set,_-rI_MB9-Ee6u_o5iYIaa_g" guid="-YeIzYa5zMar6ZvQ2JLqxig" authors="Gabriel Bonfim" changeDate="2023-07-10T21:09:03.919-0300" changeDescription="Criação do roleset" version="1.0">
+  <mainDescription>O responsável pelo Banco de Dados detém as tarefas de &lt;font size=&quot;2&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Analista de Qualidade do Banco de Dados&lt;/span>, &lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Analista Sênior de Banco de Dados&lt;/span> e &lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Scrum Master de Banco de Dados&lt;/span>.&lt;/font></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

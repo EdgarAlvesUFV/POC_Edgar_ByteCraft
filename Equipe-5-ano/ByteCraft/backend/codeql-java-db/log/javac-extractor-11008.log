@@ -1,0 +1,76 @@
+[2026-06-15 22:20:21] [javac-extractor-11008] Starting extraction for:
+                                              sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version 17 --javac-args @@@C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\codeql-java-db\log\ext\javac.args
+                                              user.dir=C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend
+[2026-06-15 22:20:21] [javac-extractor-11008] Compilation name C:/Users/Edgar/Documents/GitHub/POC_Edgar_ByteCraft/Equipe-5-ano/ByteCraft/backend/codeql-java-db/trap/java/diagnostics/diagnostic.trap.gz
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\DTO\SalaDTO.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\AlunoController.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\PerguntaController.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\ProfessorController.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\SalaController.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Aluno.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Pergunta.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Professor.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Sala.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\AlunoService.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\ProfessorService.java
+[2026-06-15 22:20:21] [javac-extractor-11008] Annotation processors enabled, and lombok usage detected in file: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\SalaService.java
+[2026-06-15 22:20:21] [javac-extractor-11008] [WARN] Appending source destination directory C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\target\generated-sources\annotations to sourcepath
+[2026-06-15 22:20:23] [javac-extractor-11008] Annotation processor class 'lombok.launch.AnnotationProcessorHider$AnnotationProcessor' initialized.
+[2026-06-15 22:20:23] [javac-extractor-11008] Annotation processor class 'lombok.launch.AnnotationProcessorHider$ClaimingProcessor' initialized.
+[2026-06-15 22:20:24] [javac-extractor-11008] 22 files will be passed to the attrib/flow phase
+[2026-06-15 22:20:24] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\ByteCraftApplication.java
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing module java.base
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing module java.desktop
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing module java.datatransfer
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/boot/spring-boot/3.5.5/spring-boot-3.5.5.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-core/6.2.10/spring-core-6.2.10.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-context/6.2.10/spring-context-6.2.10.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.5/spring-boot-autoconfigure-3.5.5.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-beans/6.2.10/spring-beans-6.2.10.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-jcl/6.2.10/spring-jcl-6.2.10.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-web/6.2.10/spring-web-6.2.10.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.44/tomcat-embed-core-10.1.44.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\DTO\AlunoDTO.java
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\DTO\SalaDTO.java
+[2026-06-15 22:20:34] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Aluno.java
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\enums\NivelDificuldadeEnum.java
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Sala.java
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\DTO\ProfessorDTO.java
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Professor.java
+[2026-06-15 22:20:35] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\AlunoController.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/data/spring-data-jpa/3.5.3/spring-data-jpa-3.5.3.jar
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/data/spring-data-commons/3.5.3/spring-data-commons-3.5.3.jar
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\AlunoService.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\repository\AlunoRepository.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\repository\SalaRepository.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\PerguntaController.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\PerguntaService.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\model\Pergunta.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\repository\PerguntaRepository.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\ProfessorController.java
+[2026-06-15 22:20:36] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/security/spring-security-crypto/6.5.3/spring-security-crypto-6.5.3.jar
+[2026-06-15 22:20:37] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\ProfessorService.java
+[2026-06-15 22:20:37] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\repository\ProfessorRepository.java
+[2026-06-15 22:20:38] [javac-extractor-11008] Processing module java.sql
+[2026-06-15 22:20:38] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\service\SalaService.java
+[2026-06-15 22:20:38] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\controller\SalaController.java
+[2026-06-15 22:20:38] [javac-extractor-11008] Processing file C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-5-ano\ByteCraft\backend\src\main\java\com\bytecraft\security\SecurityConfig.java
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing module java.logging
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing module java.xml
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/security/spring-security-config/6.5.3/spring-security-config-6.5.3.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/security/spring-security-core/6.5.3/spring-security-core-6.5.3.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/security/spring-security-web/6.5.3/spring-security-web-6.5.3.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-webmvc/6.2.10/spring-webmvc-6.2.10.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-aop/6.2.10/spring-aop-6.2.10.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-expression/6.2.10/spring-expression-6.2.10.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-jdbc/6.2.10/spring-jdbc-6.2.10.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Processing JAR file: C:/Users/Edgar/.m2/repository/org/springframework/spring-tx/6.2.10/spring-tx-6.2.10.jar
+[2026-06-15 22:20:43] [javac-extractor-11008] Javac init time: 2,5s
+[2026-06-15 22:20:43] [javac-extractor-11008] Javac attr time: 0,2s
+[2026-06-15 22:20:43] [javac-extractor-11008] Extractor time: 19,1s
+[2026-06-15 22:20:43] [javac-extractor-11008] Other time: 0,3s
+[2026-06-15 22:20:43] [javac-extractor-11008] Total time: 22,2s

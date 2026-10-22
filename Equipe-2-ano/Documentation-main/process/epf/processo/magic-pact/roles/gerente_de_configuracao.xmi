@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-nyP60pcaFqaj-iYjB27Tzw" name="new_role,_Upo7AB94Ee6u_o5iYIaa_g" guid="-nyP60pcaFqaj-iYjB27Tzw" authors="Gabriel Bonfim" changeDate="2023-07-12T11:02:39.396-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>Responsável pela integração contínua dos artefatos produzidos ao longo do processo, assim como a estrutura do(s)&#xD;
+repositório(s) e o fluxo de controle do mesmo.</mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

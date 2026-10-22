@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-R1knsW_zT3uNB9vLr5nQiw" name="issue_no_github,_3-oigCBQEe6EjL-Wp4K8lQ" guid="-R1knsW_zT3uNB9vLr5nQiw" changeDate="2024-08-29T19:53:41.403-0300">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-ca0ddcfe-7fff-aecd-c8d6-bc0853fc1969&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial,sans-serif; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #ffffff&quot;>&#xD;
+&lt;font size=&quot;2&quot;>Item usado para rastrear tarefas, melhorias, solicitações de recursos, ou bugs em um repositório de projeto,&#xD;
+permitindo discussão e acompanhamento por parte dos colaboradores.&lt;/font>&lt;/span>&lt;/b></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

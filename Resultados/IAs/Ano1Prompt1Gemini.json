@@ -1,0 +1,32 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-306",
+      "vulnerability_type": "Missing Authentication for Critical Function",
+      "severity": "HIGH",
+      "lines": [49],
+      "justification": "O uso de .anyRequest().permitAll() em SecurityConfig expõe todas as rotas não mapeadas explicitamente sem a necessidade de autenticação."
+    },
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+      "severity": "MEDIUM",
+      "lines": [34],
+      "justification": "A proteção CSRF está explicitamente desativada (.csrf(csrf -> csrf.disable())), o que pode expor a aplicação a ataques de falsificação de solicitação entre sites dependendo do uso de autenticação baseada em cookies."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Hard-coded Credentials / Secret",
+      "severity": "HIGH",
+      "lines": [284],
+      "justification": "A chave secreta utilizada para assinar os tokens JWT está hard-coded diretamente no código-fonte."
+    },
+    {
+      "cwe_id": "CWE-328",
+      "vulnerability_type": "Uso de algoritmo de hash fraco para armazenamento de senhas",
+      "severity": "HIGH",
+      "lines": [204, 286, 305, 427],
+      "justification": "As ocorrências indicam o uso de SHA-256 puro, sem salt adequado e sem função adaptativa, para hashing de senhas. As linhas 204, 286, 305 e 427 descrevem essencialmente o mesmo problema de segurança, ainda que tenham sido reportadas com linhas e severidades diferentes. A ausência de fator de trabalho ajustável também caracteriza o problema descrito como CWE-916 na linha 305, mas trata-se da mesma causa raiz e, portanto, foi consolidada nesta única ocorrência."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+Ano1
+{
+    [
+        {"cwe_id":"CWE-352", "description":"Cross-Site Request Forgery"},
+        {"cwe_id":"CWE-250", "description":"Execution with Unnecessary Privileges"},
+        {"cwe_id":"CWE-330", "description":"Use of Insufficiently Random Values"},
+        {"cwe_id":"CWE-798", "description":"Use of Hard-coded Credentials"},
+        {"cwe_id":"CWE-312", "description":"Cleartext Storage of Sensitive Information"}
+    ]
+}
+Ano2
+{
+    [
+        {"cwe_id":"CWE-352", "description":"Cross-Site Request Forgery"},
+        {"cwe_id":"CWE-489", "description":"Active Debug Code"},
+        {"cwe_id":"CWE-798", "description":"Use of Hard-coded Credentials"},
+        {"cwe_id":"CWE-209", "description":"Generation of Error Message Containing Sensitive Information"},
+        {"cwe_id":"CWE-330", "description":"Use of Insufficiently Random Values"}
+    ]
+}
+Ano3
+{
+    [
+        {"cwe_id":"CWE-197", "description":"Numeric Truncation Error"},
+        {"cwe_id":"CWE-681", "description":"Incorrect Conversion between Numeric Types"},
+        {"cwe_id":"CWE-489", "description":"Active Debug Code"},
+        {"cwe_id":"CWE-134", "description":"Use of Externally-Controlled Format String"},
+        {"cwe_id":"CWE-250", "description":"Execution with Unnecessary Privileges"},
+        {"cwe_id":"CWE-269", "description":"Improper Privilege Management"},
+        {"cwe_id":"CWE-209", "description":"Generation of Error Message Containing Sensitive Information"}
+    ]
+}
+Ano4
+{
+    [
+    ]
+}
+Ano5
+{
+    [
+        {"cwe_id":"CWE-352", "description":"Cross-Site Request Forgery"},
+        {"cwe_id":"CWE-489", "description":"Active Debug Code"},
+        {"cwe_id":"CWE-330", "description":"Use of Insufficiently Random Values"},
+        {"cwe_id":"CWE-209", "description":"Generation of Error Message Containing Sensitive Information"}
+    ]
+}

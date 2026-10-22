@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Ct-V3_KvwPJQyIY4OEACDw" name="papeis,_TmDEIB-FEe6u_o5iYIaa_g" guid="-Ct-V3_KvwPJQyIY4OEACDw" changeDate="2023-08-23T16:49:45.615-0300">
+  <mainDescription>&lt;p>&#xD;
+    Cada matéria que participa do projeto integrador possui seus próprios papéis e forma de distribuição dos mesmos por&#xD;
+    aluno.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Cada uma possui sua categoria, dispostas da seguinte forma:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    CCF 323 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/customcategories/asof_E1A9081C.html&quot;&#xD;
+    guid=&quot;_dkgNgB_WEe6GyMprTz9f5w&quot;>Arquitetura de Software&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    CCF 322 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/customcategories/esof_ii_1087E786.html&quot;&#xD;
+    guid=&quot;_W64OIB_WEe6GyMprTz9f5w&quot;>Engenharia de Software&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    CCF 221 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/customcategories/bd_4BB77433.html&quot;&#xD;
+    guid=&quot;_qW7XIB_WEe6GyMprTz9f5w&quot;>Banco de Dados&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    CCF 313 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/customcategories/poo_56ADC60F.html&quot;&#xD;
+    guid=&quot;_S9DGoB_WEe6GyMprTz9f5w&quot;>Programação Orientada a Objetos&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Professores e Monitores - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/customcategories/docentes_96A1272C.html&quot;&#xD;
+    guid=&quot;_PX0d8D42Ee6bH5sI67MJGA&quot;>Docentes&lt;/a>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

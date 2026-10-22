@@ -1,0 +1,212 @@
+{
+"vulnerabilities": [
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF) disabled",
+    "severity": "HIGH",
+    "line": 38,
+    "status": "CONFIRMED",
+    "justification": "CSRF protection is explicitly disabled in SecurityFilterChain, exposing state-changing endpoints to CSRF attacks in browser contexts."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "MEDIUM",
+    "line": 10,
+    "status": "CONFIRMED",
+    "justification": "DifficultDAOImpl contains incomplete methods and placeholder SQL without implementation, indicating inactive or debug/stub code. Additionally, multiple e.printStackTrace() calls reinforce debug usage."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 0,
+    "status": "REJECTED",
+    "justification": "No hard-coded credentials, secrets, or authentication keys are present in the provided code."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Information Exposure Through Error Messages",
+    "severity": "MEDIUM",
+    "line": 120,
+    "status": "CONFIRMED",
+    "justification": "Multiple DAO methods use e.printStackTrace() and runtime exceptions, which may expose internal details through logs or propagated server errors."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 0,
+    "status": "REJECTED",
+    "justification": "No randomness generation or cryptographic operations are present in the code."
+    },
+    {
+    "cwe_id": "CWE-285",
+    "vulnerability_type": "Improper Authorization",
+    "severity": "HIGH",
+    "line": 25,
+    "status": "NEW",
+    "justification": "checkIfEndpointIsNotPublic uses exact string matching against URI while endpoints include wildcard patterns (e.g., /**), which can lead to incorrect authorization decisions and potential bypass of protected endpoints."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Sensitive Information Exposure via Exception",
+    "severity": "MEDIUM",
+    "line": 55,
+    "status": "NEW",
+    "justification": "UserAuthenticationFilter throws RuntimeException with a message when token is missing, which may leak authentication flow details to clients if not properly handled."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "O código analisado é uma camada DAO sem exposição a endpoints HTTP ou operações baseadas em requisição web."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há código de depuração ativo, logs verbosos ou flags de debug presentes."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há credenciais hard-coded no código; credenciais são obtidas via objetos User e banco de dados."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "MEDIUM",
+    "line": 40,
+    "status": "CONFIRMED",
+    "justification": "Exceções SQL são encapsuladas e propagadas via RuntimeException(e), potencialmente expondo detalhes internos do banco e stack trace."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há uso de geração de números aleatórios ou lógica criptográfica no código."
+    },
+    {
+    "cwe_id": "CWE-200",
+    "vulnerability_type": "Exposure of Sensitive Information to Unauthorized Actor",
+    "severity": "HIGH",
+    "line": 55,
+    "status": "NEW",
+    "justification": "O código recupera e popula o campo password do usuário em múltiplos métodos DAO (SELECT * FROM Users), expondo credenciais sensíveis em objetos de retorno."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Nenhum endpoint HTTP ou operação baseada em sessão/cookies que caracterize vulnerabilidade CSRF foi identificado no código fornecido."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há código de depuração ativo, logs de debug expostos ou condicionais de debug presentes."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "CRITICAL",
+    "line": 12,
+    "status": "CONFIRMED",
+    "justification": "Chave secreta JWT está hard-coded em JwtTokenServiceImpl (SECRET_KEY), o que compromete a segurança do sistema caso o código seja exposto."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Mensagens de erro não expõem informações sensíveis; apenas mensagens genéricas são retornadas em exceções JWT."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "O código não implementa geração de valores aleatórios nem utiliza mecanismos criptográficos inseguros de randomização."
+    },
+    {
+    "cwe_id": "CWE-256",
+    "vulnerability_type": "Plaintext Storage of Password",
+    "severity": "HIGH",
+    "line": 8,
+    "status": "NEW",
+    "justification": "A entidade User armazena senha em campo String sem qualquer hashing ou criptografia, resultando em armazenamento inseguro de credenciais."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Nenhum endpoint HTTP ou configuração de segurança é apresentada; não há evidência de vulnerabilidade CSRF no código fornecido."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há código de depuração ativo, logs verbosos ou flags de debug expostas no código."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "HIGH",
+    "line": 520,
+    "status": "REJECTED",
+    "justification": "Não foram encontrados segredos, senhas ou tokens hard-coded; credenciais são tratadas via encoder e serviços externos."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Information Exposure Through Error Messages",
+    "severity": "MEDIUM",
+    "line": 250,
+    "status": "CONFIRMED",
+    "justification": "Uso de ResponseStatusException com mensagens indicando existência de usuário, fase e score ('Usuário não encontrado', 'Fase não encontrada', 'Score não encontrado'), permitindo enumeração de recursos."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 40,
+    "status": "REJECTED",
+    "justification": "Random é usado apenas para posicionamento de elementos em lógica de aplicação, sem impacto em segurança criptográfica (não utilizado em tokens, autenticação ou criptografia)."
+    },
+    {
+    "cwe_id": "CWE-476",
+    "vulnerability_type": "Null Pointer Dereference",
+    "severity": "HIGH",
+    "line": 420,
+    "status": "NEW",
+    "justification": "UserDetailsServiceImpl não verifica se o usuário retornado por findByNickname é nulo antes de criar UserDetailsImpl, podendo causar NullPointerException e falha no fluxo de autenticação."
+    },
+    {
+    "cwe_id": "CWE-476",
+    "vulnerability_type": "Null Pointer Dereference",
+    "severity": "HIGH",
+    "line": 210,
+    "status": "NEW",
+    "justification": "addPointsToScore não verifica se o score retornado por findByUserIdAndStageId é nulo antes de acessar setPoints, podendo causar NullPointerException."
+    }
+    ]
+}

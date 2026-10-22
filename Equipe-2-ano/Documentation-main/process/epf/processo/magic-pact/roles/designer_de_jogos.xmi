@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-MeU_2i5qVfVdXyhg_OkQew" name="designer_de_jogos,_AcZ_oD4XEe6bH5sI67MJGA" guid="-MeU_2i5qVfVdXyhg_OkQew" changeDate="2023-08-23T11:23:20.934-0300">
+  <mainDescription>&lt;p>&#xD;
+    Responsável pelo desenvolvimento da interface gráfica do jogo, definição da paleta de cores, criação de artes de&#xD;
+    conceito (quando necessárias) e artes finais (como sprites, mapas, customizáveis, etc).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deve se atentar às decisões de estilo gráfico e visuais, tendo em mente o cotexto e o público alvo.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

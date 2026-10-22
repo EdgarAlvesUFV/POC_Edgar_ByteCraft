@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-FYgkzdj1JAvVEVudGEfVXg" name=",_SWxl0CBPEe6EjL-Wp4K8lQ" guid="-FYgkzdj1JAvVEVudGEfVXg" authors="João G. A. Bradachi, Maria E. P. Braga, Ana F. Bonfim, Kelvin F. Veloso" changeDate="2024-09-04T17:27:31.902-0300">
+  <mainDescription>A tarefa de Análise de Qualidade tem como objetivo analisar o código produzido para verificar sua qualidade. Durante essa&#xD;
+etapa, o código será inspecionado para verificar se está dentro dos padrões estabelecidos, se foi entregue corretamente, se&#xD;
+está completo e bem organizado. A análise de qualidade inclui a revisão de aspectos como legibilidade, clareza,&#xD;
+modularidade, boas práticas de programação, documentação e conformidade com os padrões definidos pela equipe. Caso sejam&#xD;
+identificados erros de padronização, serão abertas issues para relatar esses erros e permitir sua correção. Os analistas de&#xD;
+qualidade, como os especialistas sênior em Back-end (Analistas de Qualidade POO) e Sênior BD (Analistas de Qualidade BD),&#xD;
+desempenham um papel importante nessa tarefa, aplicando seu conhecimento e expertise para garantir a conformidade e&#xD;
+refinamento do código. Ao final dessa etapa, espera-se ter um código refinado, dentro dos padrões estabelecidos e com&#xD;
+qualidade assegurada.</mainDescription>
+  <sections xmi:id="_KM4RECBQEe6EjL-Wp4K8lQ" name="Abertura do Pull Request" guid="_KM4RECBQEe6EjL-Wp4K8lQ">
+    <sectionDescription>Abrir o pull request para que o código produzido seja analisado.</sectionDescription>
+  </sections>
+  <sections xmi:id="_TPObUCBQEe6EjL-Wp4K8lQ" name="Análise do Pull Request" guid="_TPObUCBQEe6EjL-Wp4K8lQ">
+    <sectionDescription>Identificar possíveis erros de padronização, legibilidade, modularidade ou documentação durante a análise.</sectionDescription>
+  </sections>
+  <sections xmi:id="_ZBsJMCBQEe6EjL-Wp4K8lQ" name="Criação de Issues" guid="_ZBsJMCBQEe6EjL-Wp4K8lQ">
+    <sectionDescription>Abrir issues no GitHub para relatar os erros identificados, caso necessário, fornecendo detalhes para que possam ser&#xD;
+corrigidos posteriormente.</sectionDescription>
+  </sections>
+  <sections xmi:id="_ccmJ0CBQEe6EjL-Wp4K8lQ" name="Veredito de Análise de Qualidade" guid="_ccmJ0CBQEe6EjL-Wp4K8lQ">
+    <sectionDescription>Avaliar e aprovar ou recusar o pull request com base na qualidade e conformidade do código.</sectionDescription>
+  </sections>
+  <purpose>Refinar o código produzido, garantir sua conformidade com os padrões estabelecidos e corrigir quaisquer erros de&#xD;
+padronização identificados.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

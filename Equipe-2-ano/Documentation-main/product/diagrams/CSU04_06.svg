@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="74cm" height="48cm" viewBox="-302 245 1476 951" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-88" y="247" width="241" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-88" y="247" width="241" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="32.5" y="266">Score</text>
+    <rect style="fill: #ffffff" x="-88" y="275" width="241" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-88" y="275" width="241" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="289">-id: Int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="305">-points: Int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="321">-stageId: Int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="337">-userId: Int</text>
+    <rect style="fill: #ffffff" x="-88" y="343" width="241" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-88" y="343" width="241" height="116"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="357">+Score(userId:int,stageId:int)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="373">+getId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="389">+getPoints(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="405">+getStageId(): Int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="421">+getUserId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="437">+addPoints(points:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-85" y="453">+resetPoints(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="438" y="263" width="425.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="438" y="263" width="425.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="650.9" y="282">ScoreDAO</text>
+    <rect style="fill: #ffffff" x="438" y="291" width="425.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="438" y="291" width="425.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="305">-conn: java.sql.Connection</text>
+    <rect style="fill: #ffffff" x="438" y="311" width="425.8" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="438" y="311" width="425.8" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="325">+save(score:Score): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="341">+findAll(): List&lt;Score&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="357">+findById(scoreId:int): Score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="373">+findByUserId(userId:int): List&lt;Score&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="389">+findByStageId(stageId:int): List&lt;Score&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="405">+findByUserIdAndStageId(userId:Int,stageId:Int): Score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="421">+update(score:Score): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="441" y="437">+delete(scoreId:int): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="436.995,353 288,353 288,353 160.593,353 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="173.24,348 157.24,353 173.24,358 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="290" y="350">depends</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="326" y="582" width="464.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326" y="582" width="464.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="558.15" y="601">ScoreService</text>
+    <rect style="fill: #ffffff" x="326" y="610" width="464.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326" y="610" width="464.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="624">-scoreDao: ScoreDAO</text>
+    <rect style="fill: #ffffff" x="326" y="630" width="464.3" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="326" y="630" width="464.3" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="644">+createScore(userId:int,stageId:int): Score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="660">+addPointsToScore(userId:int,stageId:int,points:int): Score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="676">+getScoreByUserAndStage(userId:int,stageId:int): Score</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="692">+getTotalScoreByUserId(userId:int): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="329" y="708">+updateScore(userId:int,stageId:int,points:int): Score</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="325.006,648 213.804,648 213.804,353 160.687,353 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="173.334,348 157.334,353 173.334,358 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="215.804" y="497.5">depends</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558.15,555.82 558.15,512.999 650.9,512.999 650.9,448.478 "/>
+    <polygon style="fill: #ffffff" points="558.15,580.992 553.35,566.992 558.15,552.992 562.95,566.992 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558.15,580.992 553.35,566.992 558.15,552.992 562.95,566.992 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="658.9,462.242 650.9,446.242 642.9,462.242 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="604.525" y="509.999">aggregates</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569.15" y="576.992"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="661.9" y="456.006"></text>
+  </g>
+  <g>
+    <polygon style="fill: #000000" points="641,468 661,468 651.158,444 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="641,468 661,468 651.158,444 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="170.042" y="864.698" width="510.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.042" y="864.698" width="510.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="425.292" y="883.698">ScoreController</text>
+    <rect style="fill: #ffffff" x="170.042" y="892.698" width="510.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.042" y="892.698" width="510.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.042" y="906.698">-scoreService: ScoreService</text>
+    <rect style="fill: #ffffff" x="170.042" y="912.698" width="510.5" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.042" y="912.698" width="510.5" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.042" y="926.698">+createScore(request:ScoreCreateRequestDTO): ScoreResponseDTO</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.042" y="942.698">+updateScore(request:ScoreUpdateRequestDTO): ScoreRespondeDTO</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.042" y="958.698">+getScoreByUserAndStage(userId:int,stageId:int): ScoreResponseDTO</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.042" y="974.698">+getTotalScoreByUserId(userId:int): TotalScoreResponseDTO</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="425.292,838.519 425.292,789.849 558.15,789.849 558.15,719.48 "/>
+    <polygon style="fill: #ffffff" points="425.292,863.691 420.492,849.691 425.292,835.691 430.092,849.691 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="425.292,863.691 420.492,849.691 425.292,835.691 430.092,849.691 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="566.15,733.244 558.15,717.244 550.15,733.244 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="491.721" y="786.849">aggregates</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="436.292" y="859.691"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="569.15" y="727.008"></text>
+  </g>
+  <g>
+    <polygon style="fill: #000000" points="547.871,740.641 567.871,740.641 558.029,716.641 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="547.871,740.641 567.871,740.641 558.029,716.641 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-11.994" y="1065.06" width="364.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-11.994" y="1065.06" width="364.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="170.106" y="1084.06">ScoreCreateRequestDTO</text>
+    <rect style="fill: #ffffff" x="-11.994" y="1093.06" width="364.2" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-11.994" y="1093.06" width="364.2" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-8.99402" y="1107.06">-userId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-8.99402" y="1123.06">-stageId: int</text>
+    <rect style="fill: #ffffff" x="-11.994" y="1129.06" width="364.2" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-11.994" y="1129.06" width="364.2" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-8.99402" y="1143.06">+ScoreCreateRequestDTO(userId:int,stageId:int)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-8.99402" y="1159.06">+getUserId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-8.99402" y="1175.06">+getStageId(): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="525.408" y="1063.65" width="237.75" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="525.408" y="1063.65" width="237.75" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="644.283" y="1082.65">ScoreUpdateRequestDTO</text>
+    <rect style="fill: #ffffff" x="525.408" y="1091.65" width="237.75" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="525.408" y="1091.65" width="237.75" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1105.65">-userId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1121.65">-stageId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1137.65">-points: int</text>
+    <rect style="fill: #ffffff" x="525.408" y="1143.65" width="237.75" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="525.408" y="1143.65" width="237.75" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1157.65">+getUserId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1173.65">+getStageId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="528.408" y="1189.65">+getPoints(): int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-300.493" y="841.619" width="187.35" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-300.493" y="841.619" width="187.35" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-206.818" y="860.619">ScoreRespondeDTO</text>
+    <rect style="fill: #ffffff" x="-300.493" y="869.619" width="187.35" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-300.493" y="869.619" width="187.35" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="883.619">-id: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="899.619">-points: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="915.619">-stageId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="931.619">-userId: int</text>
+    <rect style="fill: #ffffff" x="-300.493" y="937.619" width="187.35" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-300.493" y="937.619" width="187.35" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="951.619">+getId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="967.619">+getPoints(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="983.619">+getStageId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-297.493" y="999.619">+getUserId(): int</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="425.292,981.705 425.292,1018.88 170.106,1018.88 170.106,1057.35 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="165.106,1044.7 170.106,1060.7 175.106,1044.7 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="297.699" y="1015.88">depends</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="425.292,981.705 425.292,1018.17 644.283,1018.17 644.283,1055.94 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="639.283,1043.29 644.283,1059.29 649.283,1043.29 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="534.787" y="1015.17">depends</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="169.034,922.698 32.4482,922.698 32.4482,923.619 -105.432,923.619 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-92.7847,918.619 -108.785,923.619 -92.7847,928.619 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="34.4482" y="920.159">depends</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="942.177" y="873.546" width="231.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="942.177" y="873.546" width="231.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1057.8" y="892.546">TotalScoreResponseDTO</text>
+    <rect style="fill: #ffffff" x="942.177" y="901.546" width="231.25" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="942.177" y="901.546" width="231.25" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="945.177" y="915.546">-userId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="945.177" y="931.546">-points: int</text>
+    <rect style="fill: #ffffff" x="942.177" y="937.546" width="231.25" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="942.177" y="937.546" width="231.25" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="945.177" y="951.546">+getUserId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="945.177" y="967.546">+getPoints(): int</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="681.549,922.698 807.36,922.698 807.36,923.546 934.464,923.546 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="921.817,928.546 937.817,923.546 921.817,918.546 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="809.36" y="920.122">depends</text>
+  </g>
+</svg>

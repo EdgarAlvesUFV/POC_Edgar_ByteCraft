@@ -1,0 +1,46 @@
+{
+    "vulnerabilities": [
+        {
+        "cwe_id": "CWE-352",
+        "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+        "severity": "HIGH",
+        "line": 49,
+        "justification": "A proteção CSRF está explicitamente desativada (.csrf(csrf -> csrf.disable())). Embora a aplicação utilize uma política de sessão STATELESS, a configuração do CORS permite credenciais (setAllowCredentials(true)), o que significa que se cookies ou autenticação baseada em sessão do navegador forem introduzidos futuramente, a aplicação estará vulnerável a ataques CSRF."
+        },
+        {
+        "cwe_id": "CWE-287",
+        "vulnerability_type": "Improper Authentication",
+        "severity": "CRITICAL",
+        "line": 105,
+        "justification": "No filtro 'UserAuthenticationFilter', se um token JWT inválido ou malformado for fornecido, o método 'jwtTokenService.getSubjectFromToken(token)' pode retornar nulo ou lançar uma exceção não tratada adequadamente. Se retornar nulo, 'userDAO.findByNickname(null)' será executado, potencialmente resultando em erro ou retornando um usuário inválido, mas o fluxo continua sem interromper explicitamente a requisição com um status 401 Unauthorized através do HttpServletResponse, permitindo falhas no tratamento de requisições não autenticadas."
+        },
+        {
+        "cwe_id": "CWE-522",
+        "vulnerability_type": "Insufficiently Protected Credentials",
+        "severity": "CRITICAL",
+        "line": 34,
+        "justification": "O método save armazena a senha do usuário em texto claro diretamente no banco de dados (user.getPassword()), sem a aplicação de um algoritmo de hash seguro (como BCrypt ou Argon2)."
+        },
+        {
+        "cwe_id": "CWE-522",
+        "vulnerability_type": "Insufficiently Protected Credentials",
+        "severity": "CRITICAL",
+        "line": 95,
+        "justification": "O método update persiste a senha modificada do usuário em texto claro no banco de dados, violando as práticas de armazenamento seguro de credenciais."
+        },
+        {
+        "cwe_id": "CWE-798",
+        "vulnerability_type": "Use of Hard-coded Credentials",
+        "severity": "HIGH",
+        "line": 15,
+        "justification": "A classe JwtTokenServiceImpl possui uma chave secreta utilizada para assinar tokens JWT ('SECRET_KEY') definida diretamente no código fonte de forma estática. Se o código for exposto, agentes maliciosos podem forjar tokens válidos e comprometer a autenticação do sistema."
+        },
+        {
+        "cwe_id": "CWE-338",
+        "vulnerability_type": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)",
+        "severity": "MEDIUM",
+        "line": 43,
+        "justification": "O uso da classe 'java.util.Random' na geração de posições pseudo-aleatórias para os elementos do jogo/rede pode ser previsível se um atacante conseguir deduzir o estado interno do gerador."
+        }
+    ]
+}

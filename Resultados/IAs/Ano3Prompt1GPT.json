@@ -1,0 +1,53 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext password storage and comparison",
+"severity": "HIGH",
+"line": 44,
+"justification": "Passwords are stored and compared using plain string equality without hashing or salting, exposing credentials if database is compromised."
+},
+{
+"cwe_id": "CWE-307",
+"vulnerability_type": "Insufficient authentication attempt restriction (brute force risk)",
+"severity": "MEDIUM",
+"line": 53,
+"justification": "Login endpoint allows repeated authentication attempts without rate limiting or lockout mechanism, enabling brute force attacks."
+},
+{
+"cwe_id": "CWE-942",
+"vulnerability_type": "Overly permissive Cross-Origin Resource Sharing (CORS)",
+"severity": "MEDIUM",
+"line": 12,
+"justification": "Use of '@CrossOrigin(origins = "*")' allows any domain to access API endpoints, increasing risk of cross-origin attacks."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Missing authorization checks on sensitive operations",
+"severity": "HIGH",
+"line": 300,
+"justification": "Endpoints such as score submission, island progression, and state changes do not enforce authentication or authorization, allowing unauthorized users to modify other users' data."
+},
+{
+"cwe_id": "CWE-532",
+"vulnerability_type": "Information exposure through logging",
+"severity": "LOW",
+"line": 85,
+"justification": "Sensitive data such as user attempts and correct answers are printed to standard output logs, which may expose internal game logic."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Missing authorization checks on data modification operations",
+"severity": "HIGH",
+"line": 380,
+"justification": "Repository methods such as alterarEstadoIlha allow state changes based solely on entity ID without any authentication or authorization verification, enabling unauthorized modification if endpoints are exposed."
+},
+{
+"cwe_id": "CWE-391",
+"vulnerability_type": "Improper exception handling leading to suppressed errors",
+"severity": "MEDIUM",
+"line": 180,
+"justification": "AcessoBDAluno methods use broad catch(Exception) blocks that return false or null, which suppresses underlying errors and can hide security-relevant failures or malicious activity."
+}
+]
+}

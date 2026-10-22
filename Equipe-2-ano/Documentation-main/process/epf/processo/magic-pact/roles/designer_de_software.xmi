@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-IA-9EG8TBQMqoR9SjYOazg" name="new_role,_3xTqgB-HEe6u_o5iYIaa_g" guid="-IA-9EG8TBQMqoR9SjYOazg" authors="Gabriel Bonfim" changeDate="2023-07-12T10:59:18.299-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    Refinamento e elaboração das especificações e modelos de design do sistema. Registrar sugestões de melhoria dos modelos&#xD;
+    propostos.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Deve elaborar a prova de conceito da aplicação.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

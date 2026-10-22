@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-77w_eTvl4lDa-0Qj_DVt-g" name="new_role,_-V6FcEBAEe6ck-EspvoO7g" guid="-77w_eTvl4lDa-0Qj_DVt-g">
+  <mainDescription>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+&lt;font size=&quot;2&quot;>Realizar e liderar reuniões semanais com os desenvolvedores back-end e&amp;nbsp;designers de BD&amp;nbsp;e&#xD;
+identificar as principais necessidades do grupo para otimizar a realização das tarefas de cada sprint. Participar de&#xD;
+eventuais stand-up meetings.&lt;/font>&lt;/span></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

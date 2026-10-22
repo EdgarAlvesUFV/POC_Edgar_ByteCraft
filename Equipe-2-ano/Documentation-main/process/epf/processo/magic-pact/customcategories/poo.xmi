@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-8DyGNApuNI92pHoL-vSvjw" name="poo,_S9DGoB_WEe6GyMprTz9f5w" guid="-8DyGNApuNI92pHoL-vSvjw" changeDate="2023-08-23T17:01:47.589-0300">
+  <mainDescription>&lt;p>&#xD;
+    As equipes de Banco de Dados serão formadas seguindo as seguintes regras para cada papel:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Todos os Alunos - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/desenvolvedor_junior_F38ED65B.html&quot;&#xD;
+    guid=&quot;_-H7VsB-EEe6u_o5iYIaa_g&quot;>Desenvolvedor Júnior&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Um Aluno - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/lider_poo_EE2F0945.html&quot;&#xD;
+    guid=&quot;_fUGxQB-GEe6u_o5iYIaa_g&quot;>Líder POO&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Alguns Alunos (variável) - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/analista_junior_E5856107.html&quot;&#xD;
+    guid=&quot;_BmA7QB-HEe6u_o5iYIaa_g&quot;>Analista de Qualidade Júnior&lt;/a>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

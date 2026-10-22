@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-l7Y32foSN83DbQM4PEhtoA" name=",_8L-hICBaEe6EjL-Wp4K8lQ" guid="-l7Y32foSN83DbQM4PEhtoA" changeDate="2023-07-11T23:23:27.294-0300">
+  <mainDescription>Relatar as informações encontradas ao realizar os testes é uma etapa crucial no processo de testes unitários. O propósito&#xD;
+principal é identificar erros no código para que possam ser corrigidos e garantir a qualidade do código produzido.</mainDescription>
+  <keyConsiderations>Os resultados dos testes são apurados, gerando ou não Issues.</keyConsiderations>
+  <sections xmi:id="_W2rpMCBbEe6EjL-Wp4K8lQ" name="Avaliação dos Resultados de Teste" guid="_W2rpMCBbEe6EjL-Wp4K8lQ"/>
+  <sections xmi:id="_b7QWUCBbEe6EjL-Wp4K8lQ" name="Geração de Resultado" guid="_b7QWUCBbEe6EjL-Wp4K8lQ">
+    <sectionDescription>Aprovação do incremento ou criação de Issues no GitHub. Caso uma Issue seja gerada, listar quais erros foram encontrados,&#xD;
+ordená-los por prioridade e descrever os cenários.</sectionDescription>
+  </sections>
+  <purpose>Identificar erros para poder corrigi-los, verificar qualidade do código produzido.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,53 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Armazenamento Inseguro de Senhas",
+"severity": "CRITICAL",
+"line": 42,
+"status": "NEW",
+"justification": "O endpoint de login compara senhas diretamente em texto claro sem aplicar funções de hash criptográfico como BCrypt."
+},
+{
+"cwe_id": "CWE-942",
+"vulnerability_type": "Configuração Permissiva de CORS",
+"severity": "MEDIUM",
+"line": 15,
+"status": "NEW",
+"justification": "Permitir conexões explicitamente a partir de localhost em ambiente produtivo pode expor o back-end a ataques caso o cliente execute scripts locais maliciosos."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Código de Depuração Ativo em Produção",
+"severity": "LOW",
+"line": 40,
+"status": "NEW",
+"justification": "A classe Turma utiliza System.out.println para exibir informações de auditoria/desenhos, o que pode causar lentidão e vazamento de logs estruturados."
+}
+]
+}
+
+// gemini_prompt2_ano4.json
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Plaintext Storage of Password",
+      "severity": "HIGH",
+      "reproducibility": "2/3 (67%)",
+      "justification": "Senha do Aluno e/ou senhaAdmin da Turma armazenadas em texto plano sem hashing."
+    },
+    {
+      "cwe_id": "CWE-522",
+      "vulnerability_type": "Insufficiently Protected Credentials",
+      "severity": "HIGH",
+      "reproducibility": "2/3 (67%)",
+      "justification": "Rótulo alternativo para o mesmo achado — unificado com CWE-256, o achado combinado atinge 3/3 = 100%."
+    }
+  ],
+  "candidatos_baixa_confianca": [
+    {"cwe_id": "CWE-384", "reproducibility": "1/3 (33%)", "nota": "Ocorrência única (session management); descartar salvo nova evidência."},
+    {"cwe_id": "CWE-639", "reproducibility": "1/3 (33%)", "nota": "Mesmo padrão de ruído recorrente do CWE-639 já visto em outras condições."},
+    {"cwe_id": "CWE-319", "reproducibility": "1/3 (33%)", "nota": "Ocorrência única (cleartext transmission); descartar salvo nova evidência."}
+  ]
+}

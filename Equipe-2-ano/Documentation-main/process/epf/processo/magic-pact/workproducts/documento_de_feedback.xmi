@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-0B0zy_YZ6Xftn4ck5nw9_g" name="documento_de_feedback,_wsqnMCBEEe6kKv6XI6o7_g" guid="-0B0zy_YZ6Xftn4ck5nw9_g" changeDate="2024-08-29T19:52:22.496-0300">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-8a1be033-7fff-4a83-4cf8-d1d178c671ab&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;/b> &#xD;
+&lt;p role=&quot;presentation&quot; aria-level=&quot;2&quot;&#xD;
+style=&quot;LIST-STYLE-TYPE: disc; MARGIN-BOTTOM: 0pt; TEXT-DECORATION: none; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre; MARGIN-TOP: 0pt; COLOR: #000000; FONT: 400 11pt/1.38 Arial,sans-serif; MARGIN-LEFT: 36pt; BACKGROUND-COLOR: transparent&quot;>&#xD;
+    &lt;b id=&quot;docs-internal-guid-8a1be033-7fff-4a83-4cf8-d1d178c671ab&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+    style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial,sans-serif; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #ffffff&quot;>&#xD;
+    Adicionar tópico de conclusão para definir o que deverá ser modificado&lt;/span>&lt;/b>&#xD;
+&lt;/p></mainDescription>
+  <purpose>O propósito desse artefato é a permanência do feedback, que é de suma importância para que o processo,&amp;nbsp;o produto e os&#xD;
+artefatos sejam refinados.</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

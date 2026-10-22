@@ -1,0 +1,64 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Plaintext Password Storage",
+"severity": "CRITICAL",
+"line": 20,
+"justification": "A senha do usuário é armazenada diretamente no campo 'senha' sem hashing ou criptografia, permitindo exposição total em caso de vazamento do banco de dados."
+},
+{
+"cwe_id": "CWE-200",
+"vulnerability_type": "Exposure of Sensitive Information via API Response",
+"severity": "HIGH",
+"line": 25,
+"justification": "Endpoints que retornam a entidade Aluno expõem todos os campos, incluindo senha, permitindo vazamento de credenciais em respostas HTTP."
+},
+{
+"cwe_id": "CWE-915",
+"vulnerability_type": "Improper Control of Dynamically-Determined Object Attributes (Mass Assignment)",
+"severity": "HIGH",
+"line": 17,
+"justification": "O endpoint cadastraAluno recebe diretamente um objeto Aluno do corpo da requisição e o persiste sem validação ou restrição de campos, permitindo manipulação indevida de atributos sensíveis."
+},
+{
+"cwe_id": "CWE-200",
+"vulnerability_type": "Sensitive Data Exposure in Login Handling",
+"severity": "MEDIUM",
+"line": 32,
+"justification": "O endpoint de login recebe e manipula objetos completos de Aluno no request body, potencialmente expondo dados sensíveis durante autenticação e facilitando enumeração de usuários."
+}
+]
+}
+
+
+// gpt_prompt1_ano4.json
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Armazenamento de senha em texto puro",
+      "severity": "HIGH",
+      "reproducibility": "4/4 (100%)",
+      "justification": "Senha da entidade Aluno persistida e comparada em texto puro no login, sem hashing. Confirmado em todas as execuções (linhas variam: 14, 17, 44, 61 — não-determinismo de posicionamento do modelo)."
+    },
+    {
+      "cwe_id": "CWE-200",
+      "vulnerability_type": "Exposição de informações sensíveis",
+      "severity": "HIGH",
+      "reproducibility": "4/4 (100%)",
+      "justification": "Endpoint GET /alunos retorna entidades Aluno completas; getSenha() permite serialização da senha na resposta HTTP. Confirmado em todas as execuções."
+    },
+    {
+      "cwe_id": "CWE-862",
+      "vulnerability_type": "Ausência de autorização",
+      "severity": "HIGH",
+      "reproducibility": "4/4 (100%)",
+      "justification": "Endpoints de exclusão de aluno e associação a turma não verificam autenticação/autorização. Confirmado em todas as execuções."
+    }
+  ],
+  "candidatos_baixa_confianca": [
+    {"cwe_id": "CWE-915", "reproducibility": "2/4 (50%)", "nota": "Abaixo do limiar de 60%; requer verificação manual antes de descartar ou confirmar."},
+    {"cwe_id": "CWE-15", "reproducibility": "1/4 (25%)", "nota": "Ocorrência única; tratar como ruído até evidência contrária."}
+  ]
+}

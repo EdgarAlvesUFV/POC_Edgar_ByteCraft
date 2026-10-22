@@ -1,0 +1,55 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Armazenamento de Senha em Texto Claro",
+      "severity": "CRITICAL",
+      "line": 42,
+      "justification": "O método 'validarLogin' compara strings de senha diretamente usando o método '.equals()' sem a aplicação de funções de hash criptográfico (como BCrypt). Isso indica que as senhas dos alunos são armazenadas e processadas em texto claro na base de dados."
+    },
+    {
+      "cwe_id": "CWE-489",
+      "vulnerability_type": "Presença de Código de Depuração Ativo",
+      "severity": "LOW",
+      "line": 40,
+      "justification": "O método 'exibirDesenhos' na entidade 'Turma' utiliza chamadas diretas a 'System.out.println' para fins de diagnóstico e depuração. Em ambientes de produção, isso pode causar problemas de performance e poluição de logs do console."
+    }
+  ]
+}
+
+// gemini_prompt1_ano4.json
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Armazenamento de senha em texto puro",
+      "severity": "HIGH",
+      "reproducibility": "3/3 (100%)",
+      "justification": "Senha armazenada e comparada em texto puro na entidade Aluno. Confirmado em todas as execuções (linhas variam: 80, 119, 31)."
+    },
+    {
+      "cwe_id": "CWE-200",
+      "vulnerability_type": "Exposição de dados sensíveis",
+      "severity": "HIGH",
+      "reproducibility": "3/3 (100%)",
+      "justification": "GET /alunos serializa entidades completas, expondo senha via getter. Em uma execução também expôs senhaAdmin de Turma."
+    },
+    {
+      "cwe_id": "CWE-862",
+      "vulnerability_type": "Ausência de autorização",
+      "severity": "HIGH",
+      "reproducibility": "3/3 (100%)",
+      "justification": "Endpoints de exclusão, associação de recursos e adição de desenho sem checagem de autenticação/autorização."
+    },
+    {
+      "cwe_id": "CWE-915",
+      "vulnerability_type": "Mass assignment de atributos",
+      "severity": "MEDIUM",
+      "reproducibility": "3/3 (100%)",
+      "justification": "@RequestBody desserializado diretamente em entidades persistentes, permitindo ao cliente definir campos protegidos (pontuação, fase, id)."
+    }
+  ],
+  "candidatos_baixa_confianca": [
+    {"cwe_id": "CWE-639", "reproducibility": "1/3 (33%)", "nota": "Mesmo padrão de ruído isolado já observado no Ano1; tratar com cautela."}
+  ]
+}

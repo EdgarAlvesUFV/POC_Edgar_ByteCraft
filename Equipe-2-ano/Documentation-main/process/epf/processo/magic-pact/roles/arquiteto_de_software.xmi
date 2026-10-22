@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Xd4ltngx8u5go4p_j-vVCA" name="new_role,_h_wCsB-HEe6u_o5iYIaa_g" guid="-Xd4ltngx8u5go4p_j-vVCA" authors="Gabriel Bonfim" changeDate="2024-08-29T19:32:37.731-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    Definir a arquitetura de software a ser seguida e tomar decisões técnicas chaves relacionadas ao design e implementação&#xD;
+    do projeto. Além disso, deve verificar o alinhamento dos incrementos com essa arquitetura proposta. Deve dar suporte&#xD;
+    ao&amp;nbsp;&lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/desenvolvedor_senior_29E72150.html&quot;&#xD;
+    guid=&quot;_NWVlIB97Ee6u_o5iYIaa_g&quot;>Desenvolvedor Sênior&lt;/a>&amp;nbsp;no que se diz questão da infraestrutura de testes. Deve&#xD;
+    instalar e configurar os ambientes definidos de deploy.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

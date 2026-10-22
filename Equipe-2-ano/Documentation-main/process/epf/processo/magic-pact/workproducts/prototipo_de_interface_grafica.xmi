@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-b7748ndBuJR582zRyorvrw" name="prototipo_de_interface_grafica,_A_sEkCBXEe6EjL-Wp4K8lQ" guid="-b7748ndBuJR582zRyorvrw">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-8797a70e-7fff-f3ba-117c-eea8530f7246&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial,sans-serif; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #ffffff&quot;>&#xD;
+Representação preliminar e interativa do layout e funcionalidades de uma aplicação, utilizada para visualizar e testar a&#xD;
+experiência do usuário antes do desenvolvimento final.&lt;/span>&lt;/b></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

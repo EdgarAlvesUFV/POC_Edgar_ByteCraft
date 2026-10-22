@@ -1,0 +1,18 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-259",
+"vulnerability_type": "Uso de Senha Codificada de Forma Rígida (Hardcoded) / Texto Claro",
+"severity": "HIGH",
+"line": 64,
+"justification": "O método 'autenticarAluno' compara a senha recebida em texto claro diretamente com a senha armazenada no banco usando '.equals(loginData.getSenha())'. Isso indica falta de hashing (criptografia), permitindo a exposição de credenciais."
+},
+{
+"cwe_id": "CWE-1336",
+"vulnerability_type": "Uso Incorreto de Configuração de CORS (Permissivo Demais)",
+"severity": "MEDIUM",
+"line": 16,
+"justification": "A anotação '@CrossOrigin(origins = "*")' permite que qualquer origem externa acesse os endpoints da API, o que expõe o sistema a ataques de falsificação de requisições de sites cruzados se combinado com sessões ou dados sensíveis."
+}
+]
+}

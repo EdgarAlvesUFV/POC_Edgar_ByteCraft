@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="--u2yDzdabKRGN8Lxz4XSiw" name="new_role,_NWVlIB97Ee6u_o5iYIaa_g" guid="--u2yDzdabKRGN8Lxz4XSiw" authors="Gabriel Bonfim Co-Authors: João G. A. Bradachi, Maria E. P. Braga, Ana F. Bonfim, Kelvin F. Veloso" changeDate="2024-09-04T17:26:57.136-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>&lt;b id=&quot;docs-internal-guid-b7e9af5f-7fff-8427-06f9-a1e372924586&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+    style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+    Deve desenvolver e implementar funcionalidades da aplicação, utilizando o que foi produzido pelos alunos de POO e&#xD;
+    BD.&lt;/span>&lt;/b>&lt;/font>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    &lt;font size=&quot;2&quot;>&lt;b style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+    style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+    Além disso, deve também auxiliar o Designer de Jogos no que diz respeito à integração da parte gráfica do jogo e da&#xD;
+    parte funcional.&lt;/span>&lt;/b>&lt;/font>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

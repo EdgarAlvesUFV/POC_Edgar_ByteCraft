@@ -1,0 +1,36 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.5.5'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'br.com'
+version = '0.0.1-SNAPSHOT'
+description = 'POC - Grupo 2 - PI 2025'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    /** Spring Boot Dependencies **/
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc' // Spring Data JDBC - Dependência para trabalhar com JDBC
+	implementation 'org.springframework.boot:spring-boot-starter-web' // Spring Web - Dependência para criar aplicações web, incluindo RESTful services
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    // Spring Security - Dependência para adicionar funcionalidades de segurança à aplicação
+	/** Outros **/
+    runtimeOnly 'com.mysql:mysql-connector-j' // Driver MySQL - Dependência para conectar a aplicação ao banco de dados MySQL
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

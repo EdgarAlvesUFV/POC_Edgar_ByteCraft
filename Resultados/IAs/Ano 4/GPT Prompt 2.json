@@ -1,0 +1,64 @@
+GPT Prompt 2
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 16,
+"justification": "A senha do aluno é armazenada e comparada em texto plano (plaintext) sem hash na entidade Aluno e no método de validação de login."
+},
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 18,
+"justification": "O campo 'senhaAdmin' na entidade Turma é armazenado em texto plano sem hashing ou criptografia."
+}
+]
+}
+
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Insufficiently Protected Credentials",
+"severity": "HIGH",
+"line": 42,
+"justification": "A senha do aluno é armazenada e comparada em texto plano no método validarLogin, sem o uso de hashing seguro (como BCrypt)."
+},
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 19,
+"justification": "A entidade Aluno armazena o atributo senha como uma string em texto plano na base de dados."
+},
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Insufficiently Protected Credentials",
+"severity": "MEDIUM",
+"line": 19,
+"justification": "A entidade Turma possui o campo senhaAdmin armazenado em texto plano sem mecanismo de hash ou criptografia."
+}
+]
+}
+
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 15,
+"justification": "A senha do aluno é armazenada e comparada em texto plano no campo 'senha' da entidade Aluno, sem uso de hashing seguro (ex: BCrypt)."
+},
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Insufficiently Protected Credentials",
+"severity": "HIGH",
+"line": 16,
+"justification": "O campo 'senhaAdmin' na entidade Turma é armazenado como string em texto plano, expondo credenciais administrativas."
+}
+]
+}

@@ -1,0 +1,2 @@
+INSERT INTO UserProgress(user_id, current_stage, created_at, updated_at, is_active) VALUES (1, 10, NOW(), NOW(), 1);
+INSERT INTO UserProgress(user_id, current_stage, created_at, updated_at, is_active) VALUES (2, 11, NOW(), NOW(), 1);

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-lYZFaDRXXPpL5h25jAaVDA" name="reuniao_de_treinamento,_YRWqECCgEe67Xue8GEjBvA" guid="-lYZFaDRXXPpL5h25jAaVDA" changeDate="2023-08-27T12:10:52.320-0300">
+  <mainDescription>&lt;p>&#xD;
+    É um tipo de reunião que ocorre no início do período, envolvendo todo e qualquer aluno que precise passar pelo&#xD;
+    treinamento e familiarização com alguma ferramenta que será utilizada durante o projeto.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Ocorre durante &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/disciplinegroupings/fase_de_iniciacao_D86993D0.html&quot;&#xD;
+    guid=&quot;_rsZeoEHrEe6tVJYaVc9Fvg&quot;>Fase de Iniciação&lt;/a>, no &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../magic-pact/disciplines/gerenciamento_do_projeto_5220D5A7.html&quot;&#xD;
+    guid=&quot;_oDHewEMzEe6rirTA9KuZUg&quot;>Gerenciamento do Projeto&lt;/a>, seja no &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../magic-pact/tasks/treinamento_do_processo_D6B5A302.html&quot; guid=&quot;_TBdlICCdEe67Xue8GEjBvA&quot;>Treinamento do&#xD;
+    Processo&lt;/a> ou no &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/tasks/treinamento_de_ferramentas_9F5C0810.html&quot;&#xD;
+    guid=&quot;_OqC48CCdEe67Xue8GEjBvA&quot;>Treinamento de Ferramentas&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Se necessário, qualquer outro acontecimento desse evento deve ser documentado com a explicitação dos motivos para isso.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Objetivo é reunir os membros necessários das equipes e realizar sessões de treinamento e familizarização.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

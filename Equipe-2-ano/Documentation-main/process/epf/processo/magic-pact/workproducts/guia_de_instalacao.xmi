@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-4ASEy1KbOo9g-0MIeKYXoQ" name="new_artifact,_jYMZgGbzEe-reK-6LF_q8g" guid="-4ASEy1KbOo9g-0MIeKYXoQ" changeDate="2024-08-30T14:17:45.412-0300">
+  <mainDescription>&lt;p>&#xD;
+    Exemplo:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Documentação de como fazer a instalação do magic e o EPF&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

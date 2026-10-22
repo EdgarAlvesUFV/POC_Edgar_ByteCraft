@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-lFCoYlnnsc4Ov53kTLj1UA" name="sprint_planning,_z53EICAREe67Xue8GEjBvA" guid="-lFCoYlnnsc4Ov53kTLj1UA" changeDate="2023-07-11T14:29:08.683-0300">
+  <mainDescription>&lt;p>&#xD;
+    A Sprint Planning é uma reunião que ocorre no início da sprint, reunindo toda a equipe para que o Líder do Projeto&#xD;
+    possa realizar um alinhamento com os membros do time, delegando os papéis, perguntando as possibilidades de prazo e&#xD;
+    estipulando o cronograma da sprint.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    O objetivo é fazer o alinhamento dos objetivos das sprints de Modelagem e Desenvolvimento do período em questão.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

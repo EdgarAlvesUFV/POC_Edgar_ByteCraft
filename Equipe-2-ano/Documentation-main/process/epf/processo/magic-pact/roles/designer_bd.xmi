@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ka_DLYLzbXbgeFN2ULCBKw" name="new_role,_p-1EAB-FEe6u_o5iYIaa_g" guid="-ka_DLYLzbXbgeFN2ULCBKw" authors="Gabriel Bonfim" changeDate="2023-07-12T10:54:04.859-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    Os Analistas BD serão responsáveis pela modelagem do diagrama ER do projeto bem como a codificação em SQL, com o banco&#xD;
+    de dados pronto, os analistas também terão que popular o banco com alguns dados e também dar manutenção caso&#xD;
+    necessário.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-rVu2M9tXQMMHw1ZDsA-DVQ" name=",_l-POQCBHEe6kKv6XI6o7_g" guid="-rVu2M9tXQMMHw1ZDsA-DVQ" changeDate="2023-07-11T21:04:30.737-0300">
+  <mainDescription>O refinamento do processo é uma atividade essencial que ocorre periodicamente ao longo do ciclo de vida do projeto. Seu&#xD;
+objetivo principal é revisar e aprimorar o processo de desenvolvimento de software, garantindo que esteja alinhado com as&#xD;
+práticas atuais e atenda às necessidades do projeto. Durante essa etapa, é realizada uma análise crítica do processo&#xD;
+existente, identificando pontos fracos, gargalos e ineficiências. São consideradas oportunidades de melhoria, como a&#xD;
+simplificação de atividades, a adoção de novas tecnologias ou metodologias, a automação de tarefas repetitivas e a redução&#xD;
+de desperdícios. Além disso, é importante garantir a conformidade com os padrões e regulamentações relevantes. O&#xD;
+refinamento do processo também envolve a definição ou atualização de padrões, diretrizes e templates que serão utilizados&#xD;
+ao longo do desenvolvimento do software.</mainDescription>
+  <keyConsiderations>Ao final desse processo, espera-se ter um processo de desenvolvimento de software aprimorado, mais eficiente, com menor&#xD;
+tempo de ciclo e maior qualidade.</keyConsiderations>
+  <sections xmi:id="_0zzUUCBHEe6kKv6XI6o7_g" name="Revisão do Processo" guid="_0zzUUCBHEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-2b940462-7fff-2bde-939f-e1432d4edf52&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Revisar o processo de desenvolvimento de software existente.&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_35mAkCBHEe6kKv6XI6o7_g" name="Identificação de Empasses" guid="_35mAkCBHEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-96bd4d34-7fff-7d1c-de3a-89bab612270d&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Identificar pontos fracos, gargalos e ineficiências no processo.&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_7GMfcCBHEe6kKv6XI6o7_g" name="Identificar Alternativas de Melhoria" guid="_7GMfcCBHEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-6435c82e-7fff-8318-cb97-d74b37a3f3ff&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Analisar as práticas e tecnologias atuais e identificar oportunidades de melhoria. &lt;b id=&quot;docs-internal-guid-16a50c68-7fff-cab0-9e29-3dbed532e64f&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Propor mudanças e melhorias no processo, como a simplificação de atividades, automação de tarefas, adoção de novas&#xD;
+tecnologias ou metodologias.&lt;/span>&lt;/b>&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_E6cnwCBIEe6kKv6XI6o7_g" name="Documentar Mudanças" guid="_E6cnwCBIEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-779ff3f2-7fff-7cb5-3ca6-510222f303e9&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Definir ou atualizar padrões, diretrizes e templates que serão utilizados no processo.&lt;/span>&lt;/b> &lt;b id=&quot;docs-internal-guid-b62bfb79-7fff-88c5-cbbd-9ebf38dd24af&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Documentar as mudanças e atualizar a documentação do processo, se necessário.&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <purpose>Realizar uma análise crítica do processo de desenvolvimento de software existente, identificando pontos fracos, gargalos e&#xD;
+oportunidades de melhoria, a fim de aprimorar a eficiência, qualidade e produtividade do processo.&lt;br /></purpose>
+</org.eclipse.epf.uma:TaskDescription>

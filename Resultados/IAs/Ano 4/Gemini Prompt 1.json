@@ -1,0 +1,57 @@
+Gemini Prompt 1
+{"vulnerabilities":\[{"cwe\_id":"CWE-256","vulnerability\_type":"Armazenamento de senha em texto puro","severity":"HIGH","line":80,"status":"NEW","justification":"A entidade Aluno armazena senha diretamente e o login compara valores em texto puro, sem hash."},{"cwe\_id":"CWE-200","vulnerability\_type":"Exposição de dados sensíveis","severity":"HIGH","line":28,"status":"NEW","justification":"GET /alunos retorna entidades Aluno completas, incluindo o campo senha."},{"cwe\_id":"CWE-862","vulnerability\_type":"Ausência de autorização","severity":"HIGH","line":51,"status":"NEW","justification":"O endpoint DELETE /alunos/{id} permite excluir qualquer aluno sem autenticação ou verificação de autorização."},{"cwe\_id":"CWE-862","vulnerability\_type":"Ausência de autorização","severity":"HIGH","line":59,"status":"NEW","justification":"O endpoint adicionarDesenho permite modificar qualquer aluno apenas informando seu ID, sem controle de acesso."},{"cwe\_id":"CWE-915","vulnerability\_type":"Mass assignment","severity":"MEDIUM","line":23,"status":"NEW","justification":"@RequestBody Aluno aceita diretamente propriedades da entidade, permitindo que clientes tentem alterar campos sensíveis ou privilegiados."},{"cwe\_id":"CWE-862","vulnerability\_type":"Ausência de autorização","severity":"HIGH","line":99,"status":"NEW","justification":"Endpoints de criação e associação de turmas/alunos não possuem autenticação ou autorização, permitindo alterações arbitrárias por qualquer cliente."}\]}
+
+{"vulnerabilities":\[{"cwe\_id":"CWE-256","vulnerability\_type":"Armazenamento de senha em texto puro","severity":"HIGH","line":119,"status":"NEW","justification":"O campo senha é persistido diretamente e a autenticação compara texto puro, sem hash ou mecanismo de proteção."},{"cwe\_id":"CWE-862","vulnerability\_type":"Ausência de controle de autorização","severity":"HIGH","line":52,"status":"NEW","justification":"Endpoints de exclusão e associação de recursos não verificam identidade ou permissões; qualquer cliente que conheça IDs pode executar essas operações."},{"cwe\_id":"CWE-200","vulnerability\_type":"Exposição de dados sensíveis","severity":"HIGH","line":25,"status":"NEW","justification":"GET /alunos serializa entidades Aluno diretamente, incluindo o campo senha; relações EAGER também podem expor dados de alunos em respostas de Turma."},{"cwe\_id":"CWE-915","vulnerability\_type":"Atribuição em massa","severity":"MEDIUM","line":27,"status":"NEW","justification":"@RequestBody Aluno é persistido diretamente, permitindo ao cliente fornecer campos como id, pontuação e fase sem validação explícita."}\]}
+
+{\
+ "vulnerabilities": \[\
+ {\
+ "cwe\_id": "CWE-256",\
+ "vulnerability\_type": "Armazenamento de senha em texto claro",\
+ "severity": "HIGH",\
+ "line": 31,\
+ "status": "NEW",\
+ "justification": "Senha é armazenada diretamente no campo senha e comparada em texto claro, sem hash."\
+ },\
+ {\
+ "cwe\_id": "CWE-200",\
+ "vulnerability\_type": "Exposição de dados sensíveis",\
+ "severity": "HIGH",\
+ "line": 25,\
+ "status": "NEW",\
+ "justification": "findAll() retorna entidades Aluno completas; getSenha() permite serialização da senha pela API."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de controle de acesso",\
+ "severity": "CRITICAL",\
+ "line": 38,\
+ "status": "NEW",\
+ "justification": "Login é a única validação existente; operações de exclusão e alteração de dados não exigem autenticação/autorização."\
+ },\
+ {\
+ "cwe\_id": "CWE-639",\
+ "vulnerability\_type": "IDOR / acesso por referência direta",\
+ "severity": "HIGH",\
+ "line": 45,\
+ "status": "NEW",\
+ "justification": "Endpoints aceitam IDs diretamente e permitem excluir alunos ou adicionar desenhos sem verificar autorização sobre o recurso."\
+ },\
+ {\
+ "cwe\_id": "CWE-915",\
+ "vulnerability\_type": "Mass assignment",\
+ "severity": "HIGH",\
+ "line": 22,\
+ "status": "NEW",\
+ "justification": "RequestBody é desserializado diretamente em entidades persistentes, permitindo alterar campos como senha, pontuação e fase."\
+ },\
+ {\
+ "cwe\_id": "CWE-200",\
+ "vulnerability\_type": "Exposição de senha administrativa",\
+ "severity": "HIGH",\
+ "line": 97,\
+ "status": "NEW",\
+ "justification": "Turma possui senhaAdmin e o getter permite sua serialização nas respostas da API."\
+ }\
+ \]\
+ }

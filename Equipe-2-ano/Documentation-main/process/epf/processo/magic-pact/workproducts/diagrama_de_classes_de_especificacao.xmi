@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-L8CVVorQSXvsYFKSA6fEew" name="diagrama_de_classes_de_especificacao,_1JkLICBWEe6EjL-Wp4K8lQ" guid="-L8CVVorQSXvsYFKSA6fEew" changeDate="2024-08-29T19:44:50.851-0300">
+  <mainDescription>&lt;p>&#xD;
+    Seguir o modelo do diagrama UML, com:&#xD;
+&lt;/p>&#xD;
+&lt;ul>&#xD;
+    &lt;li>&#xD;
+        Definição da classe: com primeira letra maiúscula e o resto minúscula, singular e, caso seja composta, com a letra&#xD;
+        inicial da outra palavra em maiúsculo (camel case com inicial maiúscula).&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Atributos e funções devem começar com letras minúsculas e,se compostos, a inicial da segunda palavra deve ser em&#xD;
+        maiúsculo.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Adicionar tipagens.&#xD;
+    &lt;/li>&#xD;
+    &lt;li>&#xD;
+        Classificar os tipos de classes (“&amp;lt;&amp;lt;entity&amp;gt;&amp;gt;”, “&amp;lt;&amp;lt;control&amp;gt;&amp;gt;” e “&amp;lt;&amp;lt;boundary&amp;gt;&amp;gt;”).&#xD;
+    &lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;br /></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

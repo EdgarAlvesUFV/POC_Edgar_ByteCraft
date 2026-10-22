@@ -1,0 +1,95 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-639",
+      "vulnerability_type": "Insecure Direct Object Reference (IDOR)",
+      "severity": "HIGH",
+      "line": 217,
+      "justification": "O endpoint /score/get/{userId}/{stageId} permite acesso a dados de qualquer usuário com base em userId fornecido pelo cliente, sem verificação se o usuário autenticado corresponde ao recurso solicitado."
+    },
+    {
+      "cwe_id": "CWE-639",
+      "vulnerability_type": "Insecure Direct Object Reference (IDOR)",
+      "severity": "HIGH",
+      "line": 274,
+      "justification": "O endpoint /progress/get aceita o parâmetro nickname diretamente da requisição e permite consulta de progresso de outros usuários sem validação de autorização baseada no usuário autenticado."
+    },
+    {
+      "cwe_id": "CWE-755",
+      "vulnerability_type": "Improper Exception Handling in Security Filter",
+      "severity": "MEDIUM",
+      "line": 44,
+      "justification": "O filtro de autenticação lança RuntimeException quando o token está ausente, o que pode resultar em erro 500 em vez de resposta adequada de autenticação (401), causando comportamento inseguro e possível vazamento de informações."
+    },
+    {
+    "cwe_id": "CWE-256",
+    "vulnerability_type": "Plaintext password storage and handling",
+    "severity": "HIGH",
+    "line": 22,
+    "justification": "User password is persisted and retrieved directly from the database without hashing or encryption."
+    },
+    {
+    "cwe_id": "CWE-200",
+    "vulnerability_type": "Sensitive data exposure (password returned in queries)",
+    "severity": "HIGH",
+    "line": 40,
+    "justification": "User password is loaded from the database and populated into entity objects, exposing sensitive credentials to application layers."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Information exposure through exception handling",
+    "severity": "MEDIUM",
+    "line": 26,
+    "justification": "SQL exceptions are wrapped in RuntimeException and propagated, potentially exposing internal database details and stack traces."
+    },
+    {
+    "cwe_id": "CWE-200",
+    "vulnerability_type": "Incorrect foreign key usage causing data association leakage",
+    "severity": "MEDIUM",
+    "line": 120,
+    "justification": "Queries in ScoreDAOImpl use score id instead of user_id/stage_id when fetching related entities, which can lead to incorrect data retrieval and unintended information disclosure."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Hardcoded Cryptographic Secret",
+    "severity": "CRITICAL",
+    "line": 805,
+    "justification": "JWT HMAC secret key is hardcoded in source code, exposing signing key and allowing token forgery if code is compromised."
+    },
+    {
+    "cwe_id": "CWE-256",
+    "vulnerability_type": "Plaintext Password Storage in Memory Model",
+    "severity": "HIGH",
+    "line": 645,
+    "justification": "User entity stores password as plain String without hashing or encryption, increasing risk of credential exposure."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Information Exposure Through Exception Message",
+    "severity": "MEDIUM",
+    "line": 420,
+    "justification": "Exception message includes raw input value in IllegalArgumentException, which may leak internal validation details."
+    },
+    {
+    "cwe_id": "CWE-476",
+    "vulnerability_type": "Null Pointer Dereference in Authentication User Loading",
+    "severity": "HIGH",
+    "line": 300,
+    "justification": "loadUserByUsername returns new UserDetailsImpl(user) without checking if user is null, which can cause NullPointerException when an unknown username is provided."
+    },
+    {
+    "cwe_id": "CWE-476",
+    "vulnerability_type": "Null Pointer Dereference on Score Retrieval",
+    "severity": "MEDIUM",
+    "line": 215,
+    "justification": "scoreDAO.findByUserIdAndStageId may return null and is used without validation in addPointsToScore, leading to potential NullPointerException."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Weak Pseudo-Random Number Generator",
+    "severity": "MEDIUM",
+    "line": 43,
+    "justification": "java.util.Random is used for positioning sensitive game/state logic, which is not cryptographically secure and may allow prediction of generated positions."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-rXNRKjOD68t_0WsDLsze2A" name="new_role,_TToHIB90Ee6u_o5iYIaa_g" guid="-rXNRKjOD68t_0WsDLsze2A" authors="Gabriel Bonfim" changeDate="2023-07-10T19:53:08.507-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-90d749cc-7fff-25aa-aad0-44a67b11d5cc&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Tomar decisões quanto ao estilo gráfico e visuais do jogo, tendo em mente o contexto e o público alvo.&lt;/span>&lt;/b></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

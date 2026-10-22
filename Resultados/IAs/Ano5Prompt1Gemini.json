@@ -1,0 +1,39 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-522",
+      "vulnerability_type": "Insuficiente Proteção de Credenciais (Senha em Texto Claro)",
+      "severity": "CRITICAL",
+      "line": 433,
+      "justification": "O atributo 'senha' na entidade 'Professor' está mapeado diretamente como uma String no banco de dados sem qualquer indicação de hashing (como BCrypt). Métodos no controlador como 'cadastrar' e 'autenticar' processam e comparam a senha diretamente em formato de texto claro através do serviço."
+    },
+    {
+      "cwe_id": "CWE-306",
+      "vulnerability_type": "Ausência de Autenticação e Autorização nos Endpoints",
+      "severity": "HIGH",
+      "line": 15,
+      "justification": "Os controladores expõem endpoints sensíveis (como modificação de notas, progresso de alunos e criação de turmas) sem nenhuma anotação de segurança (@PreAuthorize) ou filtros que validem tokens de sessão (JWT), permitindo acesso irrestrito e não autenticado por qualquer cliente HTTP."
+    },
+    {
+      "cwe_id": "CWE-489",
+      "vulnerability_type": "Código de Depuração Ativo (Informações de Controle em Log Público)",
+      "severity": "LOW",
+      "line": 113,
+      "justification": "O método 'salvarProgresso' utiliza 'System.out.println' e 'e.printStackTrace()' para imprimir payloads e fluxos de exceção diretamente no console padrão do servidor. Isso pode levar à exposição inadvertida de dados estruturais internos e dados de entrada da aplicação."
+    },
+    {
+      "cwe_id": "CWE-338",
+      "vulnerability_type": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)",
+      "severity": "MEDIUM",
+      "line": 19,
+      "justification": "O método geraCodigoUnico utiliza Math.random() para gerar os códigos das salas. Como Math.random() não é criptograficamente seguro, os valores gerados podem ser previsíveis, permitindo que atacantes adivinhem códigos de outras salas."
+    },
+    {
+      "cwe_id": "CWE-284",
+      "vulnerability_type": "Improper Access Control",
+      "severity": "HIGH",
+      "line": 31,
+      "justification": "A configuração do SecurityFilterChain desabilita completamente a proteção CSRF e define todas as rotas principais sob '/api/**' como 'permitAll()'. Isso expõe os endpoints de alunos, professores, salas e perguntas sem qualquer mecanismo de autenticação ou autorização ativo no nível do Spring Security."
+    }
+  ]
+}

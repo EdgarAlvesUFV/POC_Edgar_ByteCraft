@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Baloo 2", sans-serif;
+
+    --text-h1: 96px;
+    --text-h2: 64px;
+    --text-body: 40px;
+
+    --brand-sand: #ffd080;
+    --brand-white: #ffffff;
+    --brand-cyan-bright: #0bffe6;
+    --brand-cyan: #01cbcf;
+    --brand-cyan-dark: #0188a5;
+    --brand-indigo-deep: #3e3264;
+    --brand-indigo-darker: #352a55;
+    --brand-back-dark: #2C224C;
+    --brand-midnight: #0c0824;
+    --brand-navy: #001f54;
+    --brand-sky: #00cfff;
+    --brand-gray-dark: #242424;
+    --brand-violet: #6e0dd0;
+    --brand-yellow-gold: #ffd93d;
+    --brand-orange: #f4a300;
+    --brand-pink-hot: #ff3cac;
+    --brand-magenta-dark: #79043e;
+    --brand-magenta: #df0772;
+    --brand-coral: #fe546f;
+    --brand-peach: #ff9e7d;
+    --brand-white-light: #fffdff;
+
+}
+
+.noise-overlay {
+  background-image: url("/image/stage-2/noise.jpg");
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  will-change: opacity, transform;
+}
+
+@keyframes noise-fade {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 0.25; transform: scale(1); }
+}
+
+*{
+    cursor: url('/image/cursor.svg') 25 25, auto !important;
+
+}
+html, body {
+    font-family: var(--font-sans);
+    background-color: #3E3264;
+    color: #0C0824;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    user-select: none;
+}
+
+h1 {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: var(--text-h2);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.cursor-up {
+    cursor: url('/image/cursorUp.svg') 25 25, auto !important;
+}
+.cursor-down {
+    cursor: url('/image/cursorDown.svg') 25 25, auto !important;
+}

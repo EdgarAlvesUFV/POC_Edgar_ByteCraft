@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1">
+  <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_VM8jwB91Ee6u_o5iYIaa_g" guid="_VM8jwB91Ee6u_o5iYIaa_g">
+    <resourceDescriptors xmi:id="_VM8jwR91Ee6u_o5iYIaa_g" id="-RgOrVewFvXt_3Jd7PDDyRA" uri="content.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
+  <org.eclipse.epf.uma:ProcessComponent xmi:id="_VMZxMB91Ee6u_o5iYIaa_g" name="MAGIC-PACT" guid="_VMZxMB91Ee6u_o5iYIaa_g">
+    <methodElementProperty xmi:id="_VMZxMh91Ee6u_o5iYIaa_g" name="pkg_loadCheck" value="true"/>
+    <process xsi:type="org.eclipse.epf.uma:DeliveryProcess" xmi:id="_VMZxMR91Ee6u_o5iYIaa_g" name="MAGIC-PACT" guid="_VMZxMR91Ee6u_o5iYIaa_g" presentationName="MAGIC-PACT">
+      <presentation xmi:id="-RgOrVewFvXt_3Jd7PDDyRA" href="uma://-RgOrVewFvXt_3Jd7PDDyRA#-RgOrVewFvXt_3Jd7PDDyRA"/>
+      <defaultContext href="uma://_OXoEAB9wEe6u_o5iYIaa_g#_PwTU4B91Ee6u_o5iYIaa_g"/>
+      <validContext href="uma://_OXoEAB9wEe6u_o5iYIaa_g#_PwTU4B91Ee6u_o5iYIaa_g"/>
+    </process>
+  </org.eclipse.epf.uma:ProcessComponent>
+</xmi:XMI>

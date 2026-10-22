@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-eJIaYd1rOJecIjJO4EffRw" name="new_role,_Uch2oB95Ee6u_o5iYIaa_g" guid="-eJIaYd1rOJecIjJO4EffRw" authors="Gabriel Bonfim" changeDate="2023-07-12T11:03:12.070-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    Responsável por avaliar, documentar e medir o impacto das mudanças e levantamentos de erro requeridos ao longo do&#xD;
+    desenvolvimento do software.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

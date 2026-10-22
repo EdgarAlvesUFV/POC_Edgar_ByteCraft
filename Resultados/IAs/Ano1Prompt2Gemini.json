@@ -1,0 +1,156 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+      "severity": "HIGH",
+      "line": 34,
+      "status": "CONFIRMED",
+      "justification": "A proteção CSRF está explicitamente desabilitada em uma API que expõe endpoints de modificação de estado (ex: POST /turma, DELETE /turma). Embora a sessão seja configurada como STATELESS, endpoints sensíveis não parecem possuir mecanismos de mitigação alternativos contra ataques CSRF caso autenticação por cookies/sessões persistentes venha a ser adotada ou caso o filtro JWT não valide adequadamente a origem das requisições."
+    },
+    {
+      "cwe_id": "CWE-250",
+      "vulnerability_type": "Execution with Unnecessary Privileges",
+      "severity": "LOW",
+      "line": 28,
+      "status": "REJECTED",
+      "justification": "A classe lida apenas com definições e beans de configuração de segurança do Spring Security estruturadas de forma padrão, não executando operações com elevação desnecessária de privilégios ou manipulação inadequada de contexto administrativo do SO."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "LOW",
+      "line": 39,
+      "status": "REJECTED",
+      "justification": "A classe delega a lógica de negócios para um serviço externo ('misterioService.sortearMisterios'). Não há evidências explícitas no código-fonte fornecido de uso direto de geradores de números pseudoaleatórios inseguros (como java.util.Random)."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Use of Hard-coded Credentials",
+      "severity": "LOW",
+      "line": 19,
+      "status": "REJECTED",
+      "justification": "Não há chaves secretas, tokens estáticos ou credenciais em texto claro expostas nas classes analisadas. O gerenciamento de credenciais e validação do JWT é injetado ou tratado por componentes externos."
+    },
+    {
+      "cwe_id": "CWE-312",
+      "vulnerability_type": "Cleartext Storage of Sensitive Information",
+      "severity": "LOW",
+      "line": 134,
+      "status": "REJECTED",
+      "justification": "O objeto LoginRequest apenas recebe as credenciais em trânsito vindas da requisição HTTP para processamento de autenticação. Não há evidência de que os dados de senha sejam persistidos em texto claro no armazenamento local ou logs dentro do escopo fornecido."
+    },
+    {
+      "cwe_id": "CWE-284",
+      "vulnerability_type": "Improper Access Control",
+      "severity": "HIGH",
+      "line": 49,
+      "status": "NEW",
+      "justification": "Na classe SecurityConfig, a diretiva '.anyRequest().permitAll()' expõe por padrão qualquer endpoint que não esteja explicitamente mapeado nas regras anteriores. Como resultado, controladores críticos como 'MetricaController', 'SessaoController', 'PistaUsoController', 'ProgressoController' e 'TentativaController' ficam completamente públicos e acessíveis sem qualquer autenticação."
+    },
+    {
+      "cwe_id": "CWE-285",
+      "vulnerability_type": "Improper Authorization",
+      "severity": "MEDIUM",
+      "line": 331,
+      "status": "NEW",
+      "justification": "No endpoint 'DELETE /turma/{id}' do 'TurmaController', a aplicação valida se o objeto 'professorAutenticado' não é nulo, porém invoca diretamente 'turmaService.deletarTurma(id)' sem verificar se a turma informada realmente pertence ao professor autenticado, permitindo que um usuário autenticado exclua dados de terceiros (IDOR)."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "A vulnerabilidade de CSRF não pode ser determinada ou validada a partir de classes puras de modelo (M) ou repositório (R) sem analisar os controladores de entrada HTTP correspondentes."
+    },
+    {
+    "cwe_id": "CWE-250",
+    "vulnerability_type": "Execution with Unnecessary Privileges",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "O código fornecido contém apenas definições de estruturas de dados e mapeamentos SQL parametrizados que não gerenciam ou alteram privilégios de execução do sistema operacional ou do banco de dados."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "MEDIUM",
+    "line": 39,
+    "status": "CONFIRMED",
+    "justification": "No método sorteiaMisterio da classe MisterioRepository, a ordenação de registros utiliza a função 'RAND()'. Em bancos de dados SQL, essa função não é criptograficamente segura, tornando a escolha do próximo mistério previsível caso um atacante observe o padrão estatístico de respostas."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não existem strings estáticas ou literais no código que representem senhas, tokens de API ou segredos embutidos hardcoded."
+    },
+    {
+    "cwe_id": "CWE-312",
+    "vulnerability_type": "Cleartext Storage of Sensitive Information",
+    "severity": "LOW",
+    "line": 17,
+    "status": "REJECTED",
+    "justification": "A classe Professor armazena explicitamente o atributo 'hashSenha' (e não a senha em texto limpo), indicando o uso correto de funções de hashing antes da persistência no banco de dados."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "A análise estática apontou risco genérico de CSRF, mas as classes fornecidas tratam apenas de persistência, regras de negócio e filtros. A proteção contra CSRF é configurada globalmente na classe SecurityFilterChain (ausente no código fornecido)."
+    },
+    {
+    "cwe_id": "CWE-250",
+    "vulnerability_type": "Execution with Unnecessary Privileges",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há evidências de alteração de privilégios em tempo de execução, chamadas ao sistema operacional ou uso de contêineres/processos elevados nos componentes apresentados."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "MEDIUM",
+    "line": 204,
+    "status": "CONFIRMED",
+    "justification": "A classe MisterioService utiliza a classe 'java.util.Random' para realizar o sorteio e embaralhamento de alternativas do jogo. Esta classe é pseudo-aleatória e previsível, violando os requisitos de aleatoriedade segura."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "CRITICAL",
+    "line": 145,
+    "status": "CONFIRMED",
+    "justification": "O segredo de assinatura dos tokens JWT ('SECRET') está definido estritamente como uma string literal estática dentro da classe JwtService, permitindo a engenharia reversa e a falsificação de tokens."
+    },
+    {
+    "cwe_id": "CWE-312",
+    "vulnerability_type": "Cleartext Storage of Sensitive Information",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "As classes AutenticacaoService e ProfessorService aplicam hash (SHA-256) antes de persistir ou buscar as senhas de professores. Embora o SHA-256 simples sem sal não seja o ideal, as senhas não são tratadas/armazenadas em texto claro."
+    },
+    {
+    "cwe_id": "CWE-328",
+    "vulnerability_type": "Use of Weak Cryptographic Algorithm",
+    "severity": "HIGH",
+    "line": 124,
+    "status": "NEW",
+    "justification": "As classes AutenticacaoService e ProfessorService utilizam SHA-256 puro via MessageDigest para derivar os hashes das senhas. Funções de hash criptográfico rápido são vulneráveis a ataques de força bruta modernos; deve-se usar funções de derivação de chave como Argon2 ou BCrypt."
+    },
+    {
+    "cwe_id": "CWE-532",
+    "vulnerability_type": "Insertion of Sensitive Information into Log File",
+    "severity": "MEDIUM",
+    "line": 84,
+    "status": "NEW",
+    "justification": "O filtro JwtAuthFilter imprime o ID e o e-mail (dado pessoal sensível) do professor diretamente no console padrão através de System.out.println durante a depuração de requisições autenticadas."
+    }
+  ]
+}

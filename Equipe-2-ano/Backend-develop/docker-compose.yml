@@ -1,0 +1,17 @@
+services:
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql-pingo-container
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: pingo
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3306:3306"
+    volumes:
+      - pingo_mysql:/var/lib/mysql
+    restart: always
+
+volumes:
+  pingo_mysql:

@@ -1,0 +1,79 @@
+Gemini Prompt 2
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Insufficiently Protected Credentials (Plaintext Passwords)",
+"severity": "HIGH",
+"line": 43,
+"status": "NEW",
+"justification": "Passwords and admin passwords are stored and compared in plaintext without hashing (e.g., BCrypt)."
+},
+{
+"cwe_id": "CWE-384",
+"vulnerability_type": "Session Fixation / Lack of Session Management",
+"severity": "MEDIUM",
+"line": 42,
+"status": "NEW",
+"justification": "The login endpoint returns a simple success string rather than a secure session token, JWT, or authenticated session context."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Authorization Bypass Through User-Controlled Key (IDOR)",
+"severity": "MEDIUM",
+"line": 34,
+"status": "NEW",
+"justification": "Endpoints rely directly on sequential IDs without checking if the authenticated user owns or is authorized to access the resource."
+}
+]
+}
+
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 18,
+"status": "NEW",
+"justification": "A senha do aluno é armazenada e comparada em texto plano sem hashing na entidade Aluno e no método validarLogin."
+},
+{
+"cwe_id": "CWE-522",
+"vulnerability_type": "Insufficiently Protected Credentials",
+"severity": "HIGH",
+"line": 20,
+"status": "NEW",
+"justification": "O campo senhaAdmin na entidade Turma armazena credenciais administrativas em texto plano."
+}
+]
+}
+
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 18,
+"status": "NEW",
+"justification": "O campo senha na entidade Aluno é armazenado e comparado em texto plano sem o uso de hashing seguro (ex: BCrypt)."
+},
+{
+"cwe_id": "CWE-319",
+"vulnerability_type": "Cleartext Transmission of Sensitive Information",
+"severity": "MEDIUM",
+"line": 42,
+"status": "NEW",
+"justification": "O endpoint de login valida credenciais e senhas em texto plano através de requisições HTTP comuns caso o TLS não esteja configurado."
+},
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 18,
+"status": "NEW",
+"justification": "O campo senhaAdmin na entidade Turma é armazenado em texto plano sem hashing."
+}
+]
+}

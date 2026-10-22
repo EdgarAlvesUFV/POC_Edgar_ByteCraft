@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-7ZGacvhVXXF1vymawYQbig" name="new_artifact,_5BnKUGsXEe-5re5CZ8al7Q" guid="-7ZGacvhVXXF1vymawYQbig" changeDate="2024-09-04T20:49:01.187-0300">
+  <mainDescription>&lt;p>&#xD;
+    É um tipo de reunião que ocorre durante o período, sendo parecido como uma monitoria, envolvendo todo e qualquer aluno&#xD;
+    que for implementar alguma parte do software.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Ocorre durante a &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/disciplinegroupings/fase_de_producao_CFE47B85.html&quot;&#xD;
+    guid=&quot;_xdKjYEHrEe6tVJYaVc9Fvg&quot;>Fase de Produção&lt;/a> na &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../magic-pact/tasks/implementacao_9D27242D.html&quot; guid=&quot;_N2IMgCBMEe6kKv6XI6o7_g&quot;>Implementação&lt;/a>.&#xD;
+&lt;/p></mainDescription>
+  <purpose>O objetivo principal desta tarefa é justamente auxiliar os desenvolvedores juniors como em uma monitoria, mas de forma&#xD;
+reduzida e flexível para o desenvolvedor senior.</purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ITXltkDHHfzA7bC1X0XoIw" name="testes_unitarios,_0ondYCBaEe6EjL-Wp4K8lQ" guid="-ITXltkDHHfzA7bC1X0XoIw" changeDate="2024-08-30T14:25:59.400-0300">
+  <mainDescription>&lt;p>&#xD;
+    Conjunto de casos de teste automatizados, scripts, dados e resultados esperados usados para verificar a funcionalidade&#xD;
+    de unidades individuais de código, como funções e métodos, garantindo sua correção e qualidade. Essencial para&#xD;
+    identificar defeitos e manter a estabilidade do software durante o desenvolvimento.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

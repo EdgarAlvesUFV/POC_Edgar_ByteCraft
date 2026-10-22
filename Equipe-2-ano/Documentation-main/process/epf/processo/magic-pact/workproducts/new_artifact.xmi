@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Hpwqn_BBGhujhOyY6fuD-w" name="new_artifact,_SbGDwCAQEe67Xue8GEjBvA" guid="-Hpwqn_BBGhujhOyY6fuD-w" changeDate="2023-07-11T14:29:08.683-0300">
+  <mainDescription>&lt;p>&#xD;
+    As Standup Meetings ocorrem durante as sprints.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Para que uma Standup Meeting ocorra no desenvolvimento, um líder de equipe deve requisitar, por meio dos canais&#xD;
+    oficiais de agendamento de reunião, que seu scrum master atenda à reunião adicional para que dúvidas sejam sanadas. Da&#xD;
+    mesma forma, o Scrum Master pode requisitar uma dessas reuniões entrando em contato com o Líder de Equipe.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Durante o refinamento, as Standups podem ser requisitadas para adquirir um feedback geral dos membros de Engenharia e&#xD;
+    Arquitetura de Software quanto ao backlog, requisitos e quanto ao processo no geral.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    São reuniões rápidas e que devem ser requisitadas apenas quando tudo o que for falado estiver devidamente apontado na&#xD;
+    requisição da reunião.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Objetivo é sanar dúvidas, resolver empasses e solicitar algum auxílio específico.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

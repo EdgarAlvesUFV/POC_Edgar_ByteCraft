@@ -1,0 +1,74 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 92,
+"status": "NEW",
+"justification": "A senha do usuário é armazenada diretamente no campo 'senha' da entidade Aluno sem hashing ou criptografia, permitindo exposição total em caso de vazamento do banco de dados."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Missing Authorization",
+"severity": "HIGH",
+"line": 16,
+"status": "NEW",
+"justification": "Os endpoints dos controllers não possuem qualquer mecanismo de autenticação ou autorização, permitindo acesso irrestrito a operações sensíveis como criação, exclusão e listagem de dados."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Missing Authorization",
+"severity": "HIGH",
+"line": 12,
+"status": "NEW",
+"justification": "O TurmaController expõe endpoints de criação e modificação de turmas e alunos sem qualquer verificação de permissões, permitindo manipulação indevida de dados."
+},
+{
+"cwe_id": "CWE-915",
+"vulnerability_type": "Improperly Controlled Object Modification (Mass Assignment)",
+"severity": "HIGH",
+"line": 21,
+"status": "NEW",
+"justification": "O endpoint cadastrarAluno aceita diretamente um objeto Aluno vindo do @RequestBody e o persiste sem validação ou restrição de campos, permitindo que atributos sensíveis sejam sobrescritos pelo cliente."
+},
+{
+"cwe_id": "CWE-915",
+"vulnerability_type": "Improperly Controlled Object Modification (Mass Assignment)",
+"severity": "HIGH",
+"line": 18,
+"status": "NEW",
+"justification": "O endpoint cadastrarTurma recebe e persiste diretamente um objeto Turma vindo da requisição, permitindo que campos internos sejam manipulados pelo cliente sem validação."
+},
+{
+"cwe_id": "CWE-20",
+"vulnerability_type": "Improper Input Validation",
+"severity": "MEDIUM",
+"line": 30,
+"status": "NEW",
+"justification": "O endpoint de login valida apenas igualdade de strings sem validação de entrada, normalização ou proteção contra entradas malformadas, o que pode facilitar abuso lógico do processo de autenticação."
+}
+]
+}
+
+
+// gpt_prompt2_ano4.json
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Plaintext Storage of Password",
+      "severity": "HIGH",
+      "reproducibility": "3/3 (100%)",
+      "justification": "Senha do Aluno e senhaAdmin de Turma armazenadas/comparadas em texto plano, sem hashing (ex: BCrypt)."
+    },
+    {
+      "cwe_id": "CWE-522",
+      "vulnerability_type": "Insufficiently Protected Credentials",
+      "severity": "HIGH",
+      "reproducibility": "2/3 (67%)",
+      "justification": "Rótulo alternativo para o mesmo achado de credenciais em texto plano — considerar unificação com CWE-256 (nesse caso, o achado combinado atinge 3/3 = 100%)."
+    }
+  ],
+  "candidatos_baixa_confianca": []
+}

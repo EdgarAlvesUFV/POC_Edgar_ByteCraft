@@ -1,0 +1,44 @@
+name: Backup Commit Anterior
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write   
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório principal
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reset para commit anterior
+        run: git checkout HEAD^
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Clonar repositório de backup
+        run: |
+          git clone https://x-access-token:${{ secrets.BACKUP_TOKEN }}@github.com/Projeto-Integrador-2-Ano/Frontend-Backup.git backup-repo
+      
+      - name: Copiar versão anterior para backup
+        run: |
+          rsync -av --delete \
+            --exclude '.git' \
+            --exclude 'backup-repo/' \
+            ./ backup-repo/ || true
+      
+      - name: Commit e Push no repositório de backup
+        run: |
+          cd backup-repo
+          git add .
+          git commit -m "Backup do commit anterior: $GITHUB_SHA" || echo "Nada a commitar"
+          git push origin main --force

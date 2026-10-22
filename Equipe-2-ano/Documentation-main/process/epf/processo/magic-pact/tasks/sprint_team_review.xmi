@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-vnkqZOC81X5PnQR3Y7UMmg" name=",_gMppICBSEe6EjL-Wp4K8lQ" guid="-vnkqZOC81X5PnQR3Y7UMmg" changeDate="2023-07-11T22:22:51.120-0300">
+  <mainDescription>&amp;nbsp;A Revisão da Equipe de Sprint é uma reunião realizada ao final de cada sprint para revisar o trabalho realizado.&#xD;
+Durante a reunião, a equipe se reúne para avaliar o progresso, revisar as tarefas concluídas e discutir os resultados&#xD;
+alcançados em relação aos objetivos estabelecidos. Além disso, é um momento para fornecer feedback sobre o trabalho&#xD;
+realizado, destacar os pontos positivos e identificar oportunidades de melhoria para futuras sprints. Durante a revisão,&#xD;
+podem ser compartilhados os desafios enfrentados, lições aprendidas e sugestões de aprimoramento do processo. O objetivo é&#xD;
+promover uma avaliação colaborativa do trabalho realizado, incentivar a transparência e alinhar a equipe em relação aos&#xD;
+resultados e expectativas.</mainDescription>
+  <keyConsiderations>Ao final da reunião, é elaborada uma ata que registra as discussões, feedbacks e ações acordadas durante a revisão.</keyConsiderations>
+  <sections xmi:id="_pjrC4CBSEe6EjL-Wp4K8lQ" name="Agendamento da Reunião" guid="_pjrC4CBSEe6EjL-Wp4K8lQ"/>
+  <sections xmi:id="_q7ua8CBSEe6EjL-Wp4K8lQ" name="Realização da Reunião" guid="_q7ua8CBSEe6EjL-Wp4K8lQ">
+    <sectionDescription>Reunir toda a equipe envolvida na sprint, incluindo desenvolvedores, analistas, especialistas e o Scrum Master. Revisar as&#xD;
+tarefas concluídas e o progresso alcançado em relação aos objetivos definidos para a sprint. Fornecer feedback sobre o&#xD;
+trabalho realizado, destacando os pontos fortes e identificando áreas de melhoria. Discutir os desafios enfrentados e&#xD;
+compartilhar lições aprendidas durante a sprint.</sectionDescription>
+  </sections>
+  <sections xmi:id="_sgUaMCBSEe6EjL-Wp4K8lQ" name="Registro das Discussões" guid="_sgUaMCBSEe6EjL-Wp4K8lQ">
+    <sectionDescription>Identificar oportunidades de aprimoramento do processo e do trabalho da equipe. Registrar as discussões, feedbacks e ações&#xD;
+acordadas em uma ata de reunião.</sectionDescription>
+  </sections>
+  <purpose>Avaliar o progresso da equipe, revisar as tarefas concluídas, fornecer feedback e identificar oportunidades de melhoria&#xD;
+para futuras sprints.&lt;br /></purpose>
+</org.eclipse.epf.uma:TaskDescription>

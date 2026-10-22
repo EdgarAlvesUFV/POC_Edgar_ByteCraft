@@ -1,0 +1,90 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+      "severity": "MEDIUM",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "A verificação de CSRF em aplicações Spring Boot baseia-se na configuração global do Spring Security. O código-fonte expõe apenas classes controladoras e modelos, impossibilitando determinar a ausência de proteção contra CSRF via análise estática destas classes isoladas."
+    },
+    {
+      "cwe_id": "CWE-489",
+      "vulnerability_type": "Active Debug Code",
+      "severity": "LOW",
+      "line": 110,
+      "status": "CONFIRMED",
+      "justification": "A classe 'AlunoController' utiliza instruções de depuração ativas do sistema (System.out.println e e.printStackTrace) em múltiplos blocos de captura de exceção, o que pode causar overhead de I/O e poluição de logs em produção."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "MEDIUM",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Não há geração ou uso visível de números pseudoaleatórios, tokens, ou identificadores baseados em aleatoriedade dentro do escopo das classes fornecidas."
+    },
+    {
+      "cwe_id": "CWE-209",
+      "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+      "severity": "MEDIUM",
+      "line": 52,
+      "status": "CONFIRMED",
+      "justification": "O método 'login' e outros endpoints capturam exceções genéricas e retornam mensagens geradas dinamicamente via 'e.getMessage()' diretamente na resposta HTTP (ResponseEntity.badRequest().body(...)), o que pode expor detalhes internos da infraestrutura (como falhas de banco de dados ou tipos de dados esperados)."
+    },
+    {
+      "cwe_id": "CWE-256",
+      "vulnerability_type": "Plaintext Storage of a Password",
+      "severity": "CRITICAL",
+      "line": 34,
+      "status": "NEW",
+      "justification": "Na classe 'ProfessorController', o método 'cadastrar' recebe uma senha em texto claro e a envia diretamente para o serviço 'professorService.cadastrarProfessor', que por sua vez alimenta a entidade 'Professor'. O modelo armazena a senha diretamente em string sem indícios de barreira de hashing criptográfico (como BCrypt)."
+    },
+    {
+      "cwe_id": "CWE-307",
+      "vulnerability_type": "Improper Restriction of Excessive Authentication Attempts",
+      "severity": "HIGH",
+      "line": 45,
+      "status": "NEW",
+      "justification": "O endpoint '/api/professores/autenticar' valida credenciais contra o banco de dados de maneira direta sem implementar mecanismos de throttling, rate limiting ou bloqueio temporário de conta, permitindo ataques de força bruta."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+    "severity": "HIGH",
+    "line": 28,
+    "status": "CONFIRMED",
+    "justification": "A configuração do Spring Security desabilita explicitamente a proteção contra CSRF usando '.csrf(csrf -> csrf.disable())', expondo os endpoints mutáveis do sistema a ataques de falsificação de requisição entre sites."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 139,
+    "status": "CONFIRMED",
+    "justification": "O método 'salvarProgresso' e outros pontos da classe 'AlunoService' utilizam instruções de depuração ativas como 'System.out.println' e 'e.printStackTrace()', que poluem os logs de produção e podem expor detalhes internos do sistema."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "MEDIUM",
+    "line": 23,
+    "status": "CONFIRMED",
+    "justification": "O método 'geraCodigoUnico' na classe 'SalaService' utiliza 'Math.random()', que é um gerador de números pseudoaleatórios (PRNG) não criptograficamente seguro, tornando previsível a geração de códigos de salas."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "REJECTED",
+    "justification": "Embora existam chamadas para 'e.printStackTrace()', elas imprimem apenas no fluxo de erro padrão do console do servidor ('System.err') e não há evidências no código fornecido de que essas mensagens de erro ou stack traces sejam retornados nas respostas HTTP para os usuários finais."
+    },
+    {
+    "cwe_id": "CWE-285",
+    "vulnerability_type": "Improper Authorization",
+    "severity": "CRITICAL",
+    "line": 34,
+    "status": "NEW",
+    "justification": "A configuração do SecurityFilterChain permite acesso público irrestrito (permitAll) a todos os endpoints sob os caminhos '/api/alunos/**', '/api/professores/**', '/api/salas/**' e '/api/perguntas/**', permitindo o bypass completo de autenticação e autorização para as APIs de negócio."
+    }
+  ]
+}

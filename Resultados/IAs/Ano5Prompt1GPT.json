@@ -1,0 +1,102 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-306",
+"vulnerability_type": "Missing Authentication for Critical Functions",
+"severity": "HIGH",
+"line": 1,
+"justification": "Endpoints de controle de alunos, professores e salas não apresentam qualquer mecanismo de autenticação ou autorização."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Authorization Bypass Through User-Controlled Key (IDOR)",
+"severity": "HIGH",
+"line": 210,
+"justification": "Acesso ao progresso do aluno via apelido e código da sala permite consulta de dados de outros usuários sem verificação de autorização."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Authorization Bypass Through User-Controlled Key (IDOR)",
+"severity": "HIGH",
+"line": 70,
+"justification": "Atualização de nível do aluno baseada em apelido e código da sala permite manipulação de dados de outros alunos sem controle de acesso."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Authorization Bypass Through User-Controlled Key (IDOR)",
+"severity": "HIGH",
+"line": 110,
+"justification": "Registro de pontuação baseado em apelido e código da sala permite alteração de dados de outros usuários sem validação de identidade."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Authorization Bypass Through User-Controlled Key (IDOR)",
+"severity": "HIGH",
+"line": 150,
+"justification": "Atualização de progresso do aluno usando identificadores controlados pelo usuário permite acesso não autorizado a registros de terceiros."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure Through Error Messages",
+"severity": "MEDIUM",
+"line": 50,
+"justification": "Exposição de mensagens de exceção diretamente na resposta HTTP no endpoint de login."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure Through Error Messages",
+"severity": "MEDIUM",
+"line": 100,
+"justification": "Mensagens de erro internas são retornadas ao cliente no endpoint de registro de nível."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure Through Error Messages",
+"severity": "MEDIUM",
+"line": 140,
+"justification": "Detalhes de exceção são expostos ao cliente ao registrar pontuação."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure Through Error Messages",
+"severity": "MEDIUM",
+"line": 180,
+"justification": "Mensagens internas de erro são retornadas na API de salvamento de progresso."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure Through Error Messages",
+"severity": "MEDIUM",
+"line": 230,
+"justification": "Detalhes de exceção são expostos na resposta HTTP ao buscar progresso do aluno."
+},
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Plaintext Storage of Password",
+"severity": "HIGH",
+"line": 15,
+"justification": "Senha do professor é armazenada em texto puro no campo 'senha' da entidade, sem hashing ou criptografia."
+},
+{
+"cwe_id": "CWE-306",
+"vulnerability_type": "Missing Authentication for Critical API Endpoints",
+"severity": "CRITICAL",
+"line": 34,
+"justification": "All API endpoints under /api/alunos/**, /api/professores/**, /api/salas/** and /api/perguntas/** are explicitly marked as permitAll(), allowing unrestricted access to sensitive operations."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Missing Authorization Control",
+"severity": "CRITICAL",
+"line": 31,
+"justification": "The security configuration does not enforce role-based or identity-based authorization for API resources, effectively exposing application functionality to unauthenticated users."
+},
+{
+"cwe_id": "CWE-352",
+"vulnerability_type": "CSRF Protection Disabled",
+"severity": "MEDIUM",
+"line": 24,
+"justification": "CSRF protection is explicitly disabled via csrf.disable(), which can expose state-changing endpoints to cross-site request forgery attacks if cookies or session-based authentication is used."
+}
+]
+}

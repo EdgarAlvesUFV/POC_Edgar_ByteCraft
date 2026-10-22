@@ -1,0 +1,102 @@
+name: Notificar Discord
+
+on:
+  push:
+  pull_request:
+<<<<<<< HEAD
+    types: [opened, reopened, synchronize]
+=======
+    types: [opened, reopened, synchronize, closed]
+  pull_request_review:
+    types: [submitted]
+>>>>>>> origin/develop
+  issues:
+  fork:
+  watch:
+  create:
+  delete:
+
+jobs:
+  discord_notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notificação de Push
+        if: github.event_name == 'push' && github.event.created == false && github.event.deleted == false
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"📢 **Novo Push no GitHub**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.ref_name }}\n👤 Autor: ${{ github.actor }}\n🧾 Commit: ${{ github.sha }}\n✍️ Mensagem: ${{ github.event.head_commit.message }}\n🔗 https://github.com/${{ github.repository }}/commit/${{ github.sha }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+<<<<<<< HEAD
+      - name: Notificação de Pull Request
+        if: github.event_name == 'pull_request'
+=======
+      - name: Notificação de Pull Request Aberto/Reaberto
+        if: github.event_name == 'pull_request' && github.event.action != 'closed'
+>>>>>>> origin/develop
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366573255363657808>\n📢 **Novo Pull Request no GitHub**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.ref_name }}\n👤 Autor: ${{ github.actor }}\n🔀 PR: ${{ github.event.pull_request.title }}\n📝 Descrição: ${{ github.event.pull_request.body || 'Sem descrição' }}\n🔗 ${{ github.event.pull_request.html_url }}\"}" \
+<<<<<<< HEAD
+=======
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Merge de Pull Request
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366551840849788958> <@&1366571695464386602> <@&1366573255363657808>\n✅ **Pull Request Mergeado!**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch destino: ${{ github.base_ref }}\n👤 Autor: ${{ github.actor }}\n🔀 PR: ${{ github.event.pull_request.title }}\n🔗 ${{ github.event.pull_request.html_url }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Revisão de PR
+        if: github.event_name == 'pull_request_review' && github.event.action == 'submitted'
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366570039918067752>\n📝 **Revisão de Pull Request**\n📦 Repositório: ${{ github.event.repository.name }}\n👤 Revisor: ${{ github.actor }}\n🔀 PR: ${{ github.event.pull_request.title }}\n💬 Comentário: ${{ github.event.review.body || 'Sem comentário' }}\n🔗 ${{ github.event.review.html_url }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Criação de Branch
+        if: github.event_name == 'create' && github.event.ref_type == 'branch'
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366551840849788958> <@&1366571695464386602>\n🌱 **Nova Branch Criada**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.event.ref }}\n👤 Autor: ${{ github.actor }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Deleção de Branch
+        if: github.event_name == 'delete' && github.event.ref_type == 'branch'
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366551840849788958> <@&1366571695464386602>\n🪓 **Branch Deletada**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.event.ref }}\n👤 Autor: ${{ github.actor }}\"}" \
+>>>>>>> origin/develop
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Issue
+        if: github.event_name == 'issues'
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"📢 **Nova Issue no GitHub**\n📦 Repositório: ${{ github.event.repository.name }}\n👤 Autor: ${{ github.actor }}\n🐞 Título: ${{ github.event.issue.title }}\n📝 Descrição: ${{ github.event.issue.body || 'Sem descrição' }}\n🔗 ${{ github.event.issue.html_url }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+      
+      - name: Notificação de Revert
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'Revert')
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366551840849788958> <@&1366571695464386602>\n⚠️ **Revert Detectado**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.ref_name }}\n👤 Autor: ${{ github.actor }}\n🧾 Commit: ${{ github.sha }}\n✍️ Mensagem: ${{ github.event.head_commit.message }}\n🔗 https://github.com/${{ github.repository }}/commit/${{ github.sha }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notificação de Force Push
+        if: github.event_name == 'push' && github.event.forced == true
+        run: |
+          curl -H "Content-Type: application/json" \
+            -X POST \
+            -d "{\"content\": \"<@&1366551840849788958> <@&1366571695464386602>\n🚨 **Force Push Detectado!**\n📦 Repositório: ${{ github.event.repository.name }}\n🌿 Branch: ${{ github.ref_name }}\n👤 Autor: ${{ github.actor }}\n🔗 https://github.com/${{ github.repository }}/tree/${{ github.ref_name }}\"}" \
+            ${{ secrets.DISCORD_WEBHOOK }}
+

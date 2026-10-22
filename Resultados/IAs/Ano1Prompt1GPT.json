@@ -1,0 +1,39 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Ausência de controle de autorização em endpoints",
+"severity": "HIGH",
+"lines": [30, 39, 45, 47, 48, 51],
+"justification": "A regra .anyRequest().permitAll() permite acesso não autenticado a praticamente todos os endpoints que não foram explicitamente protegidos. As diferentes ocorrências descrevem a mesma causa raiz, embora apontem para linhas próximas distintas. Isso pode expor operações sensíveis, como criação, alteração e exclusão de turmas, sessões, progresso, tentativas, pistas e métricas."
+},
+{
+"cwe_id": "CWE-639",
+"vulnerability_type": "Autorização baseada em identificador manipulável",
+"severity": "HIGH",
+"lines": [66],
+"justification": "Os endpoints buscarTurma e deletarTurma recebem o identificador da turma diretamente da requisição, sem evidência de validação de propriedade ou autorização do professor sobre o recurso identificado. Isso pode permitir acesso ou alteração de recursos pertencentes a outros usuários."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Exposição de informações por mensagens de erro",
+"severity": "MEDIUM",
+"lines": [49, 50],
+"justification": "O tratamento de exceções retorna e.getMessage() diretamente ao cliente. As ocorrências nas linhas 49 e 50 descrevem o mesmo comportamento e foram consolidadas, pois mensagens de exceções internas podem revelar detalhes de implementação, banco de dados, configuração ou infraestrutura."
+},
+{
+"cwe_id": "CWE-798",
+"vulnerability_type": "Uso de segredo criptográfico hardcoded",
+"severity": "CRITICAL",
+"lines": [205, 290],
+"justification": "A chave secreta utilizada para assinar e validar tokens JWT está diretamente embutida no código-fonte. As linhas 205 e 290 descrevem a mesma causa raiz. A exposição dessa chave permite potencialmente a criação de tokens JWT válidos e a falsificação de identidade."
+},
+{
+"cwe_id": "CWE-916",
+"vulnerability_type": "Armazenamento de senhas com hash criptográfico rápido e sem salt",
+"severity": "HIGH",
+"lines": [59, 144, 145, 151, 173, 247, 390],
+"justification": "As ocorrências descrevem o mesmo problema: utilização direta de SHA-256, normalmente codificado em Base64, sem salt individual e sem uma função adaptativa de derivação de senha. As linhas 59, 144, 145, 151, 173, 247 e 390 foram consolidadas por apresentarem a mesma causa raiz, tornando os hashes mais suscetíveis a ataques offline de força bruta, dicionário e tabelas pré-computadas."
+}
+]
+}

@@ -1,0 +1,124 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-352",
+"vulnerability_type": "Cross-Site Request Forgery",
+"severity": "MEDIUM",
+"line": 1,
+"status": "REJECTED",
+"justification": "Não há evidência de estado baseado em sessão ou ausência de proteção CSRF; endpoints REST com JSON não demonstram vulnerabilidade diretamente no código analisado."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code (System.out/err logging)",
+"severity": "LOW",
+"line": 170,
+"status": "CONFIRMED",
+"justification": "Uso de System.out.println e System.err.println e printStackTrace expõe código de debug em produção."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code (stack trace exposure via logging)",
+"severity": "LOW",
+"line": 250,
+"status": "CONFIRMED",
+"justification": "Uso de e.printStackTrace() expõe detalhes internos de exceções durante falhas."
+},
+{
+"cwe_id": "CWE-330",
+"vulnerability_type": "Use of Insufficiently Random Values",
+"severity": "LOW",
+"line": 1,
+"status": "REJECTED",
+"justification": "Não há uso de geradores de números aleatórios ou lógica de geração de tokens no código fornecido."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure via Error Messages",
+"severity": "HIGH",
+"line": 40,
+"status": "CONFIRMED",
+"justification": "Mensagens de erro retornam e.getMessage() diretamente ao cliente, expondo detalhes internos da aplicação."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure via Error Messages",
+"severity": "HIGH",
+"line": 120,
+"status": "CONFIRMED",
+"justification": "Catch genérico retorna e.getMessage() na resposta HTTP, permitindo vazamento de detalhes internos."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure via Error Messages",
+"severity": "HIGH",
+"line": 210,
+"status": "CONFIRMED",
+"justification": "Exceções são expostas diretamente em respostas HTTP (e.getMessage()), incluindo falhas internas."
+},
+{
+"cwe_id": "CWE-20",
+"vulnerability_type": "Improper Input Validation (unsafe parsing of numeric input)",
+"severity": "MEDIUM",
+"line": 60,
+"status": "NEW",
+"justification": "Uso de Byte.parseByte e Integer.parseInt sem validação prévia pode causar exceções e comportamentos inesperados com entrada malformada."
+},
+{
+"cwe_id": "CWE-352",
+"vulnerability_type": "Cross-Site Request Forgery",
+"severity": "MEDIUM",
+"line": 12,
+"status": "CONFIRMED",
+"justification": "CSRF protection is explicitly disabled in Spring Security configuration, while state-changing endpoints are exposed, enabling potential CSRF attacks in session-based contexts."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code",
+"severity": "MEDIUM",
+"line": 118,
+"status": "CONFIRMED",
+"justification": "System.out.println, System.err.println and printStackTrace are used in production service/repository code, exposing debug and stack trace information."
+},
+{
+"cwe_id": "CWE-330",
+"vulnerability_type": "Use of Insufficiently Random Values",
+"severity": "MEDIUM",
+"line": 17,
+"status": "CONFIRMED",
+"justification": "Math.random() is used to generate unique classroom codes, which is not cryptographically secure and can lead to predictable values."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+"severity": "MEDIUM",
+"line": 22,
+"status": "CONFIRMED",
+"justification": "Exceptions are caught broadly and stack traces are printed (printStackTrace / System.err), exposing internal implementation details and error information."
+},
+{
+"cwe_id": "CWE-306",
+"vulnerability_type": "Missing Authentication for Critical Endpoints",
+"severity": "HIGH",
+"line": 18,
+"status": "NEW",
+"justification": "All API endpoints are explicitly marked as permitAll, effectively disabling authentication enforcement across the application."
+},
+{
+"cwe_id": "CWE-778",
+"vulnerability_type": "Improper Logging of Sensitive Information",
+"severity": "MEDIUM",
+"line": 95,
+"status": "NEW",
+"justification": "Application logs sensitive operational data (apelido, sala code, progress state) using System.out/System.err, increasing exposure risk in production logs."
+},
+{
+"cwe_id": "CWE-703",
+"vulnerability_type": "Improper Exception Handling",
+"severity": "MEDIUM",
+"line": 35,
+"status": "NEW",
+"justification": "Broad exception handling in repository and service layers swallows exceptions or returns null, reducing visibility into failures and potentially masking errors."
+}
+]
+}

@@ -1,0 +1,167 @@
+GPT Prompt 1
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-256",
+"vulnerability_type": "Armazenamento de senha em texto simples",
+"severity": "HIGH",
+"line": 14,
+"justification": "O campo senha é persistido diretamente como String, e o login compara o valor recebido diretamente com getSenha(), sem hash ou verificação de senha derivada."
+},
+{
+"cwe_id": "CWE-200",
+"vulnerability_type": "Exposição de informações sensíveis",
+"severity": "HIGH",
+"line": 56,
+"justification": "O getter getSenha() expõe a senha do aluno e os endpoints retornam entidades Aluno diretamente, permitindo que a senha persistida seja serializada nas respostas HTTP."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Ausência de autorização",
+"severity": "HIGH",
+"line": 49,
+"justification": "O endpoint de exclusão permite apagar qualquer aluno identificado pelo ID sem autenticação ou verificação de autorização do solicitante."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Ausência de autorização",
+"severity": "HIGH",
+"line": 61,
+"justification": "O endpoint permite adicionar desenhos a qualquer aluno usando apenas o alunoId, sem autenticação ou verificação de autorização."
+},
+{
+"cwe_id": "CWE-862",
+"vulnerability_type": "Ausência de autorização",
+"severity": "HIGH",
+"line": 35,
+"justification": "Qualquer cliente que conheça os IDs pode inserir qualquer aluno em qualquer turma, pois não existe verificação de autenticação ou autorização."
+},
+{
+"cwe_id": "CWE-915",
+"vulnerability_type": "Mass assignment de atributos",
+"severity": "HIGH",
+"line": 24,
+"justification": "O endpoint aceita diretamente uma entidade Aluno inteira via @RequestBody e a persiste, permitindo ao cliente fornecer atributos que deveriam ser controlados pelo servidor, como pontuacaoTotal, faseAtual e desenhos."
+}
+]
+}
+
+{\
+ "vulnerabilities": \[\
+ {\
+ "cwe\_id": "CWE-256",\
+ "vulnerability\_type": "Armazenamento de senha em texto puro",\
+ "severity": "HIGH",\
+ "line": 17,\
+ "justification": "O campo senha é persistido diretamente como String, sem evidência de hashing com algoritmo adequado."\
+ },\
+ {\
+ "cwe\_id": "CWE-200",\
+ "vulnerability\_type": "Exposição de dados sensíveis",\
+ "severity": "HIGH",\
+ "line": 30,\
+ "justification": "O endpoint GET /alunos retorna entidades Aluno diretamente; a entidade possui getSenha(), permitindo que a senha armazenada seja serializada na resposta."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de autorização",\
+ "severity": "HIGH",\
+ "line": 47,\
+ "justification": "O endpoint de exclusão permite apagar qualquer aluno identificado pelo ID sem verificar autenticação ou autorização do solicitante."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de autorização em operações sobre recursos",\
+ "severity": "HIGH",\
+ "line": 40,\
+ "justification": "A inserção de aluno em qualquer turma é permitida apenas com os IDs dos recursos, sem verificação de identidade ou autorização."\
+ }\
+ \]\
+ }
+
+ {\
+ "vulnerabilities": \[\
+ {\
+ "cwe\_id": "CWE-256",\
+ "vulnerability\_type": "Armazenamento de senha em texto puro",\
+ "severity": "HIGH",\
+ "line": 44,\
+ "justification": "A senha do aluno é persistida diretamente no atributo senha e comparada em texto puro durante o login, sem uso de hash criptográfico."\
+ },\
+ {\
+ "cwe\_id": "CWE-200",\
+ "vulnerability\_type": "Exposição de dados sensíveis",\
+ "severity": "HIGH",\
+ "line": 24,\
+ "justification": "O endpoint GET /alunos retorna objetos Aluno completos; como Aluno possui getSenha(), a serialização JSON pode expor as senhas armazenadas."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de controle de acesso",\
+ "severity": "HIGH",\
+ "line": 49,\
+ "justification": "O endpoint de exclusão de alunos não verifica autenticação ou autorização, permitindo que qualquer cliente autorizado a alcançar a API solicite a exclusão de um aluno por ID."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de controle de acesso",\
+ "severity": "MEDIUM",\
+ "line": 55,\
+ "justification": "O endpoint permite adicionar desenhos a qualquer aluno identificado por ID sem verificar a identidade ou autorização do solicitante."\
+ },\
+ {\
+ "cwe\_id": "CWE-15",\
+ "vulnerability\_type": "Configuração insegura de CORS",\
+ "severity": "LOW",\
+ "line": 14,\
+ "justification": "O CORS é configurado diretamente no controlador para um origin de desenvolvimento (localhost:3000), indicando uma configuração dependente de ambiente e potencialmente inadequada para implantação."\
+ }\
+ \]\
+ }
+
+ {\
+ "vulnerabilities": \[\
+ {\
+ "cwe\_id": "CWE-256",\
+ "vulnerability\_type": "Armazenamento de senha em texto puro",\
+ "severity": "HIGH",\
+ "line": 61,\
+ "justification": "A senha é armazenada diretamente no atributo senha e comparada em texto puro durante o login, sem uso de hashing."\
+ },\
+ {\
+ "cwe\_id": "CWE-200",\
+ "vulnerability\_type": "Exposição de informações sensíveis",\
+ "severity": "HIGH",\
+ "line": 25,\
+ "justification": "O endpoint GET /alunos retorna entidades Aluno diretamente, incluindo o campo senha através do getter, expondo credenciais armazenadas na resposta."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de controle de acesso",\
+ "severity": "HIGH",\
+ "line": 44,\
+ "justification": "O endpoint de exclusão permite apagar qualquer aluno identificado pelo ID sem autenticação ou autorização verificável."\
+ },\
+ {\
+ "cwe\_id": "CWE-862",\
+ "vulnerability\_type": "Ausência de controle de acesso",\
+ "severity": "MEDIUM",\
+ "line": 38,\
+ "justification": "O endpoint permite associar um aluno arbitrário a uma turma arbitrária sem verificar se o solicitante está autorizado a realizar essa operação."\
+ },\
+ {\
+ "cwe\_id": "CWE-915",\
+ "vulnerability\_type": "Mass assignment de atributos sensíveis",\
+ "severity": "MEDIUM",\
+ "line": 20,\
+ "justification": "O @RequestBody desserializa diretamente a entidade Aluno, permitindo que o cliente forneça campos como id, pontuacaoTotal, faseAtual e pontuacaoFases."\
+ },\
+ {\
+ "cwe\_id": "CWE-915",\
+ "vulnerability\_type": "Mass assignment de atributos sensíveis",\
+ "severity": "MEDIUM",\
+ "line": 31,\
+ "justification": "O @RequestBody desserializa diretamente a entidade Turma, permitindo que o cliente forneça atributos protegidos como senhaAdmin e rankingAlunos."\
+ }\
+ \]\
+ }

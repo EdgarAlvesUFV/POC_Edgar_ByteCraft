@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Snl4lPXH3VCtzvGy7qtz6g" name="new_role,__Kih4B-HEe6u_o5iYIaa_g" guid="-Snl4lPXH3VCtzvGy7qtz6g" authors="Gabriel Bonfim" changeDate="2023-07-10T22:13:11.354-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;p>&#xD;
+    &lt;b id=&quot;docs-internal-guid-2f7c421d-7fff-9b29-ff59-bfd491002b3f&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+    style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+    Deve dar suporte aos desenvolvedores sênior e, eventualmente, auxiliar em tarefas do Designer de Jogos.&lt;/span>&lt;/b>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

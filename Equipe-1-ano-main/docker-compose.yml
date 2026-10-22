@@ -1,0 +1,32 @@
+services:
+  backend:
+    image: eclipse-temurin:17-jdk
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+      - gradle_cache:/root/.gradle
+    command: ["bash","-lc","./gradlew bootRun --no-daemon"]
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: ${DB_URL}
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASS}
+
+  frontend:
+    build:
+      context: ./frontend/detetives_do_sapiens
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:8080 
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+
+
+
+volumes:
+  gradle_cache:
+  node_modules:

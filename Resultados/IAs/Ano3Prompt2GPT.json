@@ -1,0 +1,100 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-197",
+"vulnerability_type": "Numeric Truncation Error",
+"severity": "MEDIUM",
+"line": 210,
+"status": "CONFIRMED",
+"justification": "Vários pontos do código realizam casting de long para int (ex: pkAluno e PK_Aluno), podendo causar perda de dados se valores excederem o limite de int."
+},
+{
+"cwe_id": "CWE-681",
+"vulnerability_type": "Incorrect Conversion between Numeric Types",
+"severity": "MEDIUM",
+"line": 210,
+"status": "CONFIRMED",
+"justification": "Conversões explícitas entre long e int em múltiplos endpoints podem gerar inconsistências e comportamento incorreto ao acessar IDs no banco."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code",
+"severity": "LOW",
+"line": 120,
+"status": "CONFIRMED",
+"justification": "Uso extensivo de System.out.println e System.err.println em controladores expõe código de debug ativo em produção."
+},
+{
+"cwe_id": "CWE-134",
+"vulnerability_type": "Use of Externally-Controlled Format String",
+"severity": "LOW",
+"line": 0,
+"status": "REJECTED",
+"justification": "Não há uso de funções de formatação com strings controladas externamente (ex: printf). System.out.println com concatenação não caracteriza vulnerabilidade de format string."
+},
+{
+"cwe_id": "CWE-250",
+"vulnerability_type": "Execution with Unnecessary Privileges",
+"severity": "MEDIUM",
+"line": 1,
+"status": "REJECTED",
+"justification": "Não há evidência de execução com privilégios elevados ou operações explícitas de escalonamento de privilégios no código."
+},
+{
+"cwe_id": "CWE-269",
+"vulnerability_type": "Improper Privilege Management",
+"severity": "HIGH",
+"line": 60,
+"status": "NEW",
+"justification": "Endpoints expostos sem autenticação/autorização (ex: delete, cadastro e login) e uso de CORS '*' permitem acesso irrestrito a operações sensíveis."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+"severity": "MEDIUM",
+"line": 300,
+"status": "NEW",
+"justification": "Mensagens de erro e logs expõem detalhes internos (stack traces, IDs de entidades e mensagens de exceção), o que pode vazar informações sensíveis do sistema."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code",
+"severity": "MEDIUM",
+"line": 360,
+"status": "CONFIRMED",
+"justification": "Uso de System.err.println para log de erro em getIlhasDoProgresso expõe comportamento de debug em produção e não utiliza framework de logging apropriado."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+"severity": "LOW",
+"line": 120,
+"status": "CONFIRMED",
+"justification": "IllegalArgumentException em buscaIlha inclui índice interno na mensagem de erro, expondo detalhes de implementação ao consumidor."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Information Exposure via Error Handling",
+"severity": "LOW",
+"line": 350,
+"status": "CONFIRMED",
+"justification": "Exceções capturadas são convertidas em saída via System.err.println ou suprimidas sem tratamento adequado, podendo expor informações internas em logs."
+},
+{
+"cwe_id": "CWE-681",
+"vulnerability_type": "Incorrect Conversion between Numeric Types",
+"severity": "LOW",
+"line": 310,
+"status": "NEW",
+"justification": "Há inconsistências entre tipos int e Long/Integer em chaves primárias e métodos de repositório, exigindo casts explícitos que podem causar incompatibilidades ou perda de compatibilidade futura."
+},
+{
+"cwe_id": "CWE-197",
+"vulnerability_type": "Numeric Truncation Error",
+"severity": "LOW",
+"line": 280,
+"status": "NEW",
+"justification": "Uso inconsistente de tipos primitivos int para IDs de entidades JPA (Long/Integer) pode levar a truncamento ou limitações de faixa em cenários de crescimento de dados."
+}
+]
+}

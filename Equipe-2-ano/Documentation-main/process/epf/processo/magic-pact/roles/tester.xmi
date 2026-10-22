@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-p4bFBsnCuHYmzM7UCjqbZg" name="analista_junior,_BmA7QB-HEe6u_o5iYIaa_g" guid="-p4bFBsnCuHYmzM7UCjqbZg" authors="Gabriel Bonfim" changeDate="2023-07-10T22:06:41.325-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-19441ab9-7fff-df56-38de-4550bb4db21c&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Os Analistas de Qualidade Júnior terão a responsabilidade de criar cenários de teste unitário, propostos pelo Analista de&#xD;
+Qualidade, para verificar a integridade do que foi desenvolvido por sua devida equipe. Devem documentar e reportar os&#xD;
+resultados ao Analista de Qualidade.&lt;/span>&lt;/b></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

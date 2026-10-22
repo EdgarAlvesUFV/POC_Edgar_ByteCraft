@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-5ys0jdp4Cl3FHmNz9wkNaQ" name="plano_gerencia_configuracao,_ALiLcEOQEe6vbuXjEYlAVw" guid="-5ys0jdp4Cl3FHmNz9wkNaQ" changeDate="2024-08-30T14:24:25.953-0300">
+  <mainDescription>Documento que descreve os processos e procedimentos para controlar, identificar e rastrear as alterações nos componentes de&#xD;
+um sistema durante seu ciclo de vida, garantindo a integridade e a consistência do produto final. &#xD;
+&lt;p>&#xD;
+    &lt;b id=&quot;docs-internal-guid-36c3d1ee-7fff-8daa-9ba8-930af19f2dcb&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;/b>&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

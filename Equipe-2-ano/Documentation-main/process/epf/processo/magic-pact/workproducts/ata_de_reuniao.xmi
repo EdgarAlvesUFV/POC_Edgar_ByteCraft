@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-7qYBS0aCZgDfNQdKTwpR4g" name="ata_de_reuniao,_mw_kECBLEe6kKv6XI6o7_g" guid="-7qYBS0aCZgDfNQdKTwpR4g" changeDate="2024-08-29T19:36:57.537-0300">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-a6d798a7-7fff-74f2-bbf1-5f584d6e01b9&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial,sans-serif; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+&lt;font size=&quot;2&quot;>As Atas serão utilizadas para avaliar a presença e ausência de membros das equipes e dos responsáveis. Elas&#xD;
+irão conter campos de classificação do tipo de reunião por meio de tags pré-definidas, (ajudar com códigos, definir agenda&#xD;
+ou tirar dúvidas), informar objetivo da reunião e os resultados alcançados.&lt;/font>&lt;/span>&lt;/b></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Manter os tópicos discutidos e membros presentes.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

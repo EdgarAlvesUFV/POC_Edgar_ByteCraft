@@ -1,0 +1,71 @@
+Ano1 =
+{
+“SecurityConfig.java”: [ 
+    {"cwe_id":"CWE-352", "description":"spring-disabled-csrf-protection","line":35}
+  ],
+"Dockerfile": [
+    {"cwe_id":"CWE-250", "description":"Execution with Unnecessary Privileges","line":48}
+]
+}
+Ano2 =
+{
+  "SecurityConfig.java": [
+    {"cwe_id":"CWE-352", "description":"spring-disabled-csrf-protection","line":52}
+  ],
+  "NetworkDeviceDAOimpl.java": [
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":41},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":63},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":86},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":102},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":119},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":131},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":146}
+  ],
+  "JwtTokenServiceImpl.java": [
+    {"cwe_id":"CWE-CWE-798", "description":"Use of Hard-coded Credentials","line":18}
+  ]
+}
+Ano3 =
+{
+  "ControladorDesafio.java": [
+    {"cwe_id":"CWE-CWE-197", "description":"  ","line":98},
+    {"cwe_id":"CWE-CWE-197", "description":"  ","line":188},
+    {"cwe_id":"CWE-CWE-681", "description":"  ","line":98},
+    {"cwe_id":"CWE-CWE-681", "description":"  ","line":188},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":165},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":232}
+  ],
+  "ControladorIlhas.java": [
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":152},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":182}
+  ]
+  "Dockerfile": [
+    {"cwe_id":"CWE-CWE-250", "description":"Execution with Unnecessary Privileges","line":15},
+    {"cwe_id":"CWE-CWE-269", "description":"Improper Privilege Management","line":22},
+    {"cwe_id":"CWE-CWE-250", "description":"Execution with Unnecessary Privileges","line":14},
+    {"cwe_id":"CWE-CWE-250", "description":"Execution with Unnecessary Privileges","line":29}
+  ],
+  "TelaPontuacao.jsx": [
+    {"cwe_id":"CWE-CWE-134", "description":"Use of Externally-Controlled Format String","line":73}
+  ]
+}
+Ano4 =
+{
+
+}
+Ano5 =
+{
+  "SecurityConfig.java": [
+    {"cwe_id":"CWE-CWE-352", "description":"Use of Externally-Controlled Format String","line":73}
+  ],
+  "AlunoController.java": [
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":180},
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":210}
+  ],
+  "ProfessorRepository.java": [
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":22}
+  ],
+  "AlunoService.java": [
+    {"cwe_id":"CWE-CWE-489", "description":"Active Debug Code","line":122}
+  ]
+}

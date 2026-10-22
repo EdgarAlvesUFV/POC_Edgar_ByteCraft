@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-m1zfxiCK5623ybHYYaxD7g" name="asof,_dkgNgB_WEe6GyMprTz9f5w" guid="-m1zfxiCK5623ybHYYaxD7g" changeDate="2023-08-23T16:27:17.429-0300">
+  <mainDescription>&lt;p>&#xD;
+    As equipes de Arquitetura de Software são compostas por dois alunos e cada um deve assumir um dos seguintes papéis:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Aluno 1 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/arquiteto_de_software_C8817CC7.html&quot;&#xD;
+    guid=&quot;_h_wCsB-HEe6u_o5iYIaa_g&quot;>Arquiteto de Software&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Aluno 2 - &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/roles/designer_de_software_3C687BB2.html&quot;&#xD;
+    guid=&quot;_3xTqgB-HEe6u_o5iYIaa_g&quot;>Designer de Software&lt;/a>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    Ambos os alunos exercerão o papel de &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../magic-pact/roles/desenvolvedor_lider_C0BA812E.html&quot; guid=&quot;__Kih4B-HEe6u_o5iYIaa_g&quot;>Desenvolvedor&#xD;
+    Líder&lt;/a>&amp;nbsp;em cada &lt;a class=&quot;elementLink&quot;&#xD;
+    href=&quot;./../../magic-pact/disciplines/sprint_de_desenvolvimento_A522FFB9.html&quot; guid=&quot;_X3qTYEHsEe6tVJYaVc9Fvg&quot;>Sprint de&#xD;
+    Desenvolvimento&lt;/a> da &lt;a class=&quot;elementLink&quot; href=&quot;./../../magic-pact/disciplinegroupings/producao_CFE47B85.html&quot;&#xD;
+    guid=&quot;_xdKjYEHrEe6tVJYaVc9Fvg&quot;>Fase de Produção&lt;/a>.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+    No caso de um só aluno compor a equipe de Arquitetura de Software de um grupo, ele ficará responsável por ambos os&#xD;
+    papéis.&#xD;
+&lt;/p></mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

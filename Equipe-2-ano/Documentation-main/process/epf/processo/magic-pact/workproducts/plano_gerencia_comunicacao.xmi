@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-9APT1QMloD7vd_WGqt-pFQ" name="plano_gerencia_comunicacao,_5Wg0YEOPEe6vbuXjEYlAVw" guid="-9APT1QMloD7vd_WGqt-pFQ">
+  <mainDescription>&lt;b id=&quot;docs-internal-guid-fae03693-7fff-d893-f05d-5be175cd1679&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial,sans-serif; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Um documento que define as estratégias, métodos e ferramentas para a gestão da comunicação entre os stakeholders de um&#xD;
+projeto, assegurando que as informações sejam adequadamente compartilhadas e compreendidas.&lt;/span>&lt;/b></mainDescription>
+</org.eclipse.epf.uma:ArtifactDescription>

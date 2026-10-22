@@ -1,0 +1,124 @@
+{
+"vulnerabilities": [
+{
+"cwe_id": "CWE-197",
+"vulnerability_type": "Numeric Truncation Error",
+"severity": "LOW",
+"line": 117,
+"status": "REJECTED",
+"justification": "O cast explícito de long para int em '(int) pkAluno' pode causar truncamento, mas não há evidência de impacto ou controle externo que comprometa a segurança de forma explorável neste fluxo local."
+},
+{
+"cwe_id": "CWE-681",
+"vulnerability_type": "Incorrect Conversion between Numeric Types",
+"severity": "LOW",
+"line": 126,
+"status": "REJECTED",
+"justification": "A conversão usando .intValue() em chaves primárias geradas pelo banco não oferece risco iminente de segurança ou comportamento incorreto explorável sob as condições atuais."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code",
+"severity": "LOW",
+"line": 78,
+"status": "REJECTED",
+"justification": "O uso de System.out.println para fins de log básico em ambiente de desenvolvimento não configura código de debug ativo nocivo ou backdoors deixados em produção."
+},
+{
+"cwe_id": "CWE-134",
+"vulnerability_type": "Use of Externally-Controlled Format String",
+"severity": "LOW",
+"line": 78,
+"status": "REJECTED",
+"justification": "Não há o uso de funções de formatação controladas externamente (como String.format com parâmetros dinâmicos de entrada). Trata-se de concatenação simples de strings."
+},
+{
+"cwe_id": "CWE-250",
+"vulnerability_type": "Execution with Unnecessary Privileges",
+"severity": "LOW",
+"line": 13,
+"status": "REJECTED",
+"justification": "O código faz parte de controladores REST padrão do Spring e não há indícios de manipulação ou elevação inadequada de privilégios do sistema operacional ou container."
+},
+{
+"cwe_id": "CWE-269",
+"vulnerability_type": "Improper Privilege Management",
+"severity": "MEDIUM",
+"line": 57,
+"status": "REJECTED",
+"justification": "Embora os endpoints não possuam anotações explícitas de controle de acesso (como Spring Security), a ausência de mecanismos de autenticação global no escopo destas classes inviabiliza a validação precisa de falha na gerência de privilégios sem avaliar o contexto da aplicação."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+"severity": "LOW",
+"line": 169,
+"status": "CONFIRMED",
+"justification": "O método captura exceções genéricas e executa e.printStackTrace(), o que expõe detalhes internos da infraestrutura e traços de pilha no console do servidor ou fluxos de saída."
+},
+{
+"cwe_id": "CWE-346",
+"vulnerability_type": "Origin Validation Error",
+"severity": "HIGH",
+"line": 15,
+"status": "NEW",
+"justification": "O uso de @CrossOrigin(origins = "*") em múltiplos controladores expõe a API a riscos de segurança, permitindo que qualquer domínio externo faça requisições e interaja com os endpoints."
+},
+{
+"cwe_id": "CWE-197",
+"vulnerability_type": "Numeric Truncation Error",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "Não há evidências de conversão de tipos numéricos primitivos maiores para menores (como long para int) que causem truncamento de dados com impacto de segurança."
+},
+{
+"cwe_id": "CWE-681",
+"vulnerability_type": "Incorrect Conversion between Numeric Types",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "As conversões numéricas explícitas presentes no código, como coerções de int para long, são seguras e não acarretam perda de precisão ou problemas de representação."
+},
+{
+"cwe_id": "CWE-489",
+"vulnerability_type": "Active Debug Code",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "Não foram detectados métodos main de teste isolados, flags de depuração ativas em produção ou backdoors intencionais para fins de debug."
+},
+{
+"cwe_id": "CWE-134",
+"vulnerability_type": "Use of Externally-Controlled Format String",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "O código não utiliza funções de formatação de strings (como String.format ou printf) que aceitem dados de entrada do usuário diretamente como string de formato."
+},
+{
+"cwe_id": "CWE-250",
+"vulnerability_type": "Execution with Unnecessary Privileges",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "O código-fonte analisado contempla apenas mapeamentos de entidades e repositórios de dados, não apresentando lógica de elevação ou execução com privilégios do sistema operacional."
+},
+{
+"cwe_id": "CWE-269",
+"vulnerability_type": "Improper Privilege Management",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "A aplicação delega o gerenciamento de persistência ao Spring Data JPA e não implementa regras explícitas ou falhas de controle de acesso baseado em papéis nas classes analisadas."
+},
+{
+"cwe_id": "CWE-209",
+"vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+"severity": "REJECTED",
+"line": 0,
+"status": "REJECTED",
+"justification": "O uso isolado de System.err.println em blocos catch captura mensagens genéricas internas, mas não há evidência de vazamento direto dessas informações para o usuário final através de uma interface ou API nesta camada."
+}
+]
+}

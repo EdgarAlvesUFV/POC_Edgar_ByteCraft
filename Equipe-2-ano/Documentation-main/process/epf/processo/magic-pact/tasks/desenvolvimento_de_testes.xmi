@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-zqZEtXg8EPBvVrJziaQ1aA" name=",_rlWikCBZEe6EjL-Wp4K8lQ" guid="-zqZEtXg8EPBvVrJziaQ1aA" changeDate="2023-07-11T23:13:46.086-0300">
+  <mainDescription>Pensar nos cenários possíveis que podem gerar erros e criar testes unitários baseados nesses cenários é uma prática&#xD;
+fundamental no desenvolvimento de software. Os testes unitários são responsáveis por verificar se as unidades individuais&#xD;
+de código, como funções, métodos ou classes, estão funcionando corretamente.</mainDescription>
+  <sections xmi:id="_2QtSACBZEe6EjL-Wp4K8lQ" name="Identificação de Cenários de Erro" guid="_2QtSACBZEe6EjL-Wp4K8lQ"/>
+  <sections xmi:id="_3zKjQCBZEe6EjL-Wp4K8lQ" name="Desenvolvimento dos Testes Unitários" guid="_3zKjQCBZEe6EjL-Wp4K8lQ">
+    <sectionDescription>Criação e desenvolvimento dos testes unitários aos quais o código será submetido.</sectionDescription>
+  </sections>
+  <sections xmi:id="_nBm1ICBaEe6EjL-Wp4K8lQ" name="Apuração dos Testes" guid="_nBm1ICBaEe6EjL-Wp4K8lQ">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-93f49b4c-7fff-35aa-ba99-15a00250455c&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Criar Pull Request do Teste unitário. &lt;b id=&quot;docs-internal-guid-16e19f19-7fff-3eb6-07b6-3fd42c8ff42b&quot;&#xD;
+style=&quot;FONT-WEIGHT: normal&quot;>&lt;span&#xD;
+style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Aprovar ou reprovar Pull Request .&lt;/span>&lt;/b>&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <purpose>&lt;p>&#xD;
+    Ter testes criados para poder validar a qualidade dos códigos produzidos na Tarefa de desenvolvimento.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,180 @@
+{
+  "vulnerabilities": [
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery",
+      "severity": "MEDIUM",
+      "line": 31,
+      "status": "CONFIRMED",
+      "justification": "CSRF protection is explicitly disabled via csrf.disable(). If JWTs are stored in cookies or automatically sent by browsers, state-changing endpoints may be vulnerable."
+    },
+    {
+      "cwe_id": "CWE-250",
+      "vulnerability_type": "Execution with Unnecessary Privileges",
+      "severity": "MEDIUM",
+      "line": 44,
+      "status": "CONFIRMED",
+      "justification": "Security configuration allows unrestricted access through anyRequest().permitAll(), violating the principle of least privilege."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "LOW",
+      "line": 0,
+      "status": "REJECTED",
+      "justification": "No random value generation logic is present in the provided code."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Use of Hard-coded Credentials",
+      "severity": "LOW",
+      "line": 0,
+      "status": "REJECTED",
+      "justification": "No hard-coded credentials, passwords, API keys, or secrets are present in the provided code."
+    },
+    {
+      "cwe_id": "CWE-312",
+      "vulnerability_type": "Cleartext Storage of Sensitive Information",
+      "severity": "LOW",
+      "line": 0,
+      "status": "REJECTED",
+      "justification": "The provided code does not show storage of sensitive information; persistence implementation is not included."
+    },
+    {
+      "cwe_id": "CWE-200",
+      "vulnerability_type": "Information Exposure Through Error Messages",
+      "severity": "MEDIUM",
+      "line": 102,
+      "status": "NEW",
+      "justification": "LoginController returns internal exception messages to clients via e.getMessage(), potentially exposing implementation details."
+    },
+    {
+      "cwe_id": "CWE-862",
+      "vulnerability_type": "Missing Authorization",
+      "severity": "HIGH",
+      "line": 44,
+      "status": "NEW",
+      "justification": "Most endpoints are accessible because of anyRequest().permitAll(), and no authorization checks are evident for sensitive resources."
+    },
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "O código fornecido contém apenas modelos e repositórios; não há endpoints HTTP, formulários ou mecanismos de proteção CSRF para avaliar."
+    },
+    {
+      "cwe_id": "CWE-250",
+      "vulnerability_type": "Execution with Unnecessary Privileges",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Não há operações privilegiadas, execução de comandos, manipulação de permissões ou contexto de privilégios no código analisado."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Embora haja uso de ORDER BY RAND()/RANDOM(), isso é utilizado para seleção de registros e não para funções de segurança, autenticação ou geração de segredos."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Use of Hard-coded Credentials",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Não foram encontradas credenciais embutidas, senhas fixas, tokens ou chaves no código-fonte."
+    },
+    {
+      "cwe_id": "CWE-312",
+      "vulnerability_type": "Cleartext Storage of Sensitive Information",
+      "severity": "LOW",
+      "line": 17,
+      "status": "REJECTED",
+      "justification": "A entidade Professor armazena um campo denominado hashSenha; não há evidência de armazenamento de senha em texto claro."
+    },
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery",
+      "severity": "MEDIUM",
+      "line": 1,
+      "status": "CONFIRMED",
+      "justification": "Aplicação utiliza autenticação baseada em JWT, porém não há evidência de proteção CSRF no código de configuração de segurança. Caso o token seja armazenado em cookies, endpoints mutáveis podem ficar expostos."
+    },
+    {
+      "cwe_id": "CWE-250",
+      "vulnerability_type": "Execution with Unnecessary Privileges",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Não há evidência de execução com privilégios excessivos, uso de contas privilegiadas ou elevação de privilégios no código analisado."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "LOW",
+      "line": 619,
+      "status": "CONFIRMED",
+      "justification": "MisterioService utiliza java.util.Random para embaralhamento e seleção. Embora não pareça proteger ativos sensíveis, Random não é criptograficamente seguro."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Use of Hard-coded Credentials",
+      "severity": "HIGH",
+      "line": 542,
+      "status": "CONFIRMED",
+      "justification": "A chave JWT está embutida no código-fonte através da constante SECRET, permitindo comprometimento caso o código seja exposto."
+    },
+    {
+      "cwe_id": "CWE-312",
+      "vulnerability_type": "Cleartext Storage of Sensitive Information",
+      "severity": "LOW",
+      "line": 542,
+      "status": "REJECTED",
+      "justification": "Não há evidência de armazenamento persistente de informações sensíveis em texto claro. A chave está hardcoded, mas isso se enquadra melhor em CWE-798."
+    },
+    {
+      "cwe_id": "CWE-327",
+      "vulnerability_type": "Use of a Broken or Risky Cryptographic Algorithm",
+      "severity": "HIGH",
+      "line": 491,
+      "status": "NEW",
+      "justification": "Senhas são protegidas apenas com SHA-256 sem salt e sem algoritmo adaptativo para senhas (bcrypt, Argon2 ou PBKDF2), facilitando ataques de força bruta e rainbow tables."
+    },
+    {
+      "cwe_id": "CWE-532",
+      "vulnerability_type": "Insertion of Sensitive Information into Log Files",
+      "severity": "MEDIUM",
+      "line": 435,
+      "status": "NEW",
+      "justification": "Mensagens de log registram emails de usuários e detalhes de autenticação diretamente via System.out/System.err."
+    },
+    {
+      "cwe_id": "CWE-306",
+      "vulnerability_type": "Missing Authentication for Critical Function",
+      "severity": "HIGH",
+      "line": 294,
+      "status": "NEW",
+      "justification": "Métodos como buscarTurmaEspecifica, buscarTurmas e deletarTurma não demonstram validação de autenticação ou autorização no nível de serviço/repositório."
+    },
+    {
+      "cwe_id": "CWE-862",
+      "vulnerability_type": "Missing Authorization",
+      "severity": "HIGH",
+      "line": 809,
+      "status": "NEW",
+      "justification": "TurmaService.deletarTurma permite exclusão apenas por ID sem verificar se a turma pertence ao professor autenticado."
+    },
+    {
+      "cwe_id": "CWE-287",
+      "vulnerability_type": "Improper Authentication",
+      "severity": "HIGH",
+      "line": 572,
+      "status": "NEW",
+      "justification": "JwtService.validarToken realiza parsing do JWT sem configurar explicitamente a chave de assinatura no parser, comprometendo a validação da autenticidade do token."
+    }
+  ]
+}

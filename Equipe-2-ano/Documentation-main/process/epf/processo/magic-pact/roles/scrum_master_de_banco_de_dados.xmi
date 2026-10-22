@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:RoleDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-ZwXrKdZT_EHrqUFGO0SbVw" name="new_role,_nBLEQB9-Ee6u_o5iYIaa_g" guid="-ZwXrKdZT_EHrqUFGO0SbVw" authors="Gabriel Bonfim" changeDate="2023-07-10T21:07:25.862-0300" changeDescription="Criação do papel" version="1.0">
+  <mainDescription>&lt;span&#xD;
+style=&quot;FONT-SIZE: 11pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Realizar e liderar reuniões semanais com os analistas de Banco de Dados e identificar as principais necessidades do grupo&#xD;
+para otimizar a realização das tarefas de cada sprint. Participar de eventuais stand-up meetings.&lt;/span></mainDescription>
+</org.eclipse.epf.uma:RoleDescription>

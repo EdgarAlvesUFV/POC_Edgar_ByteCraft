@@ -1,0 +1,172 @@
+{
+"vulnerabilities": [
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+    "severity": "LOW",
+    "line": 48,
+    "status": "CONFIRMED",
+    "justification": "A proteção CSRF está explicitamente desativada no método securityFilterChain. No entanto, o impacto é mitigado para LOW devido à arquitetura do aplicativo utilizar autenticação STATELESS (geralmente baseada em tokens JWT), minimizando o risco de ataques via cookies."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 139,
+    "status": "REJECTED",
+    "justification": "Não há evidências de códigos de depuração ativos, backdoors de desenvolvedor ou entrypoints de teste deixados expostos no código-fonte fornecido."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Nenhuma credencial codificada de forma rígida (hard-coded), chaves criptográficas ou tokens secretos foram encontrados nos arquivos de configuração ou de código fornecidos."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "MEDIUM",
+    "line": 139,
+    "status": "CONFIRMED",
+    "justification": "Os métodos interceptores de banco de dados (ex: NetworkDeviceDAOimpl) utilizam 'e.printStackTrace()' dentro dos blocos catch de SQLException, o que pode expor detalhes internos da infraestrutura de banco de dados e fluxos de execução nas saídas de erro do sistema."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Não há geração ou uso de valores pseudoaleatórios insuficientes ou inseguros (como geradores de números aleatórios inadequados para chaves ou sessões) nas classes mapeadas."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "A classe analisada e uma camada de persistencia de dados (DAO) e DTOs, nao lidando diretamente com o protocolo HTTP ou gerenciamento de sessoes web de forma a introduzir falhas de CSRF."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Nao foram encontrados pontos de entrada de debug ativos, logs de depuracao excessivos ou metodos main de teste expostos nas classes fornecidas."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "O codigo utiliza injecao de dependencia do javax.sql.DataSource. Nao ha credenciais ou strings de conexao embutidas diretamente no codigo-fonte analisado."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "MEDIUM",
+    "line": 39,
+    "status": "CONFIRMED",
+    "justification": "O codigo relanca excecoes SQLException embutidas em RuntimeException sem tratamento prévio, o que pode expor detalhes internos estruturais do banco de dados (ex: nomes de tabelas e colunas)."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "LOW",
+    "line": 1,
+    "status": "REJECTED",
+    "justification": "Nao ha geracao de numeros aleatorios, tokens de sessao, saltes ou hashes sendo computados nas classes analisadas."
+    },
+    {
+    "cwe_id": "CWE-522",
+    "vulnerability_type": "Insufficiently Protected Credentials",
+    "severity": "HIGH",
+    "line": 34,
+    "status": "NEW",
+    "justification": "O metodo save em UserDAOImpl armazena a senha do usuario (user.getPassword()) diretamente no banco de dados, indicando uma provavel ausencia de hashing seguro (como bcrypt ou PBKDF2)."
+    },
+    {
+      "cwe_id": "CWE-798",
+      "vulnerability_type": "Use of Hard-coded Credentials",
+      "severity": "HIGH",
+      "line": 15,
+      "status": "CONFIRMED",
+      "justification": "A classe JwtTokenServiceImpl possui uma chave secreta utilizada para assinatura de tokens JWT armazenada diretamente no código em formato de texto simples (variável SECRET_KEY)."
+    },
+    {
+      "cwe_id": "CWE-352",
+      "vulnerability_type": "Cross-Site Request Forgery",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "O código fornecido consiste em DTOs, entidades e interfaces/implementações de serviços. Não há definições de rotas controladoras (Controllers) ou configurações de filtros HTTP que possibilitem validar a presença ou ausência de proteções contra CSRF."
+    },
+    {
+      "cwe_id": "CWE-489",
+      "vulnerability_type": "Active Debug Code",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "Não foram encontrados trechos de código ativo destinados exclusivamente a propósitos de depuração (debug), tais como flags experimentais ou métodos utilitários de bypass no código analisado."
+    },
+    {
+      "cwe_id": "CWE-209",
+      "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "As exceções lançadas no código capturam cenários controlados com mensagens customizadas genéricas, sem indícios de vazamento de stack traces ou detalhes internos da infraestrutura nas mensagens estruturadas."
+    },
+    {
+      "cwe_id": "CWE-330",
+      "vulnerability_type": "Use of Insufficiently Random Values",
+      "severity": "LOW",
+      "line": 1,
+      "status": "REJECTED",
+      "justification": "O código analisado não faz uso direto de geradores de números pseudo-aleatórios (PRNG) fracos ou funções matemáticas previsíveis para a criação de identificadores ou tokens."
+    },
+    {
+    "cwe_id": "CWE-330",
+    "vulnerability_type": "Use of Insufficiently Random Values",
+    "severity": "MEDIUM",
+    "line": 40,
+    "status": "CONFIRMED",
+    "justification": "A classe java.util.Random é utilizada para gerar posições e embaralhar dispositivos. Como java.util.Random é pseudoaleatório e previsível, não deve ser usado em contextos onde a imprevisibilidade é necessária para a segurança ou integridade da lógica de negócios."
+    },
+    {
+    "cwe_id": "CWE-352",
+    "vulnerability_type": "Cross-Site Request Forgery (CSRF)",
+    "severity": "LOW",
+    "line": 13,
+    "status": "REJECTED",
+    "justification": "O código analisado faz parte da camada de serviço (Service/Logic) e não expõe endpoints ou configurações de segurança de transporte HTTP. A validação de proteção contra CSRF não pode ser confirmada ou contestada com base exclusivamente nesta camada."
+    },
+    {
+    "cwe_id": "CWE-489",
+    "vulnerability_type": "Active Debug Code",
+    "severity": "LOW",
+    "line": 13,
+    "status": "REJECTED",
+    "justification": "Não há evidências de código de depuração ativo, métodos main de teste ou flags de debug expostas nas classes de serviço analisadas."
+    },
+    {
+    "cwe_id": "CWE-798",
+    "vulnerability_type": "Use of Hard-coded Credentials",
+    "severity": "LOW",
+    "line": 13,
+    "status": "REJECTED",
+    "justification": "Não foram encontradas credenciais, chaves criptográficas ou segredos estáticos declarados diretamente no código-fonte fornecido."
+    },
+    {
+    "cwe_id": "CWE-209",
+    "vulnerability_type": "Generation of Error Message Containing Sensitive Information",
+    "severity": "LOW",
+    "line": 43,
+    "status": "REJECTED",
+    "justification": "As exceções ResponseStatusException lançadas utilizam mensagens genéricas e regras de negócio normais (ex: 'Fase não encontrada'). Não há vazamento de stack traces ou dados internos do servidor."
+    }
+    ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-oDso-2mt1pIuvROsihBJQA" name="implementacao,_N2IMgCBMEe6kKv6XI6o7_g" guid="-oDso-2mt1pIuvROsihBJQA" changeDate="2023-07-11T21:37:40.522-0300">
+  <mainDescription>A tarefa de Desenvolvimento consiste em cada membro da equipe responsável por uma tarefa específica implementar o código&#xD;
+necessário para sua conclusão. Cada membro deve cumprir os prazos especificados enquanto desenvolve a tarefa de forma&#xD;
+satisfatória, aderindo aos padrões de desenvolvimento estabelecidos e aos requisitos especificados. Durante o processo, é&#xD;
+incentivado que sejam realizadas seções de programação par a par, nas quais dois membros da equipe trabalham juntos em&#xD;
+determinadas etapas do desenvolvimento, promovendo a colaboração, revisão de código, troca de conhecimentos e identificação&#xD;
+de melhores práticas, o mais indicado é que as duplas consistam em pessoas com níveis de habilidade diferentes, para que um&#xD;
+possa ensinar o outro. Além disso, é fundamental manter uma comunicação efetiva com os demais membros da equipe, buscando&#xD;
+suporte e esclarecimento de dúvidas. O processo também envolve etapas como atualizar o repositório local para obter a&#xD;
+versão mais recente do código-fonte, realizar commit local das alterações, criar um pull request para revisão e integração&#xD;
+do código ao repositório principal e comunicar o término da tarefa para a equipe.</mainDescription>
+  <keyConsiderations>Ao final dessa etapa, espera-se ter o código produzido, pronto para ser integrado e testado em conjunto com as demais&#xD;
+partes do sistema.</keyConsiderations>
+  <sections xmi:id="_eW4CACBMEe6kKv6XI6o7_g" name="Atualização de Arquivos Locais" guid="_eW4CACBMEe6kKv6XI6o7_g">
+    <sectionDescription>Atualizar o repositório local para obter a versão mais recente do código-fonte.</sectionDescription>
+  </sections>
+  <sections xmi:id="_lvRy8CBMEe6kKv6XI6o7_g" name="Desenvolvimento da Tarefa" guid="_lvRy8CBMEe6kKv6XI6o7_g">
+    <sectionDescription>Desenvolver a tarefa atribuída, aderindo aos padrões de desenvolvimento e cumprindo os requisitos especificados.</sectionDescription>
+  </sections>
+  <sections xmi:id="_4DtzoCBMEe6kKv6XI6o7_g" name="Submissão do Código" guid="_4DtzoCBMEe6kKv6XI6o7_g">
+    <sectionDescription>Realizar commit local das alterações. Criar um pull request para revisão e integração do código ao repositório principal.</sectionDescription>
+  </sections>
+  <sections xmi:id="_6wmQoCBMEe6kKv6XI6o7_g" name="Solicitação de Revisão" guid="_6wmQoCBMEe6kKv6XI6o7_g">
+    <sectionDescription>&amp;nbsp;Solicitar a revisão dos membros da equipe ao comunicar término da tarefa.</sectionDescription>
+  </sections>
+  <purpose>Desenvolver o código da tarefa atribuída dentro do prazo definido e aderindo aos padrões de qualidade estabelecidos pelo&#xD;
+processo.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-KPlyX-cspkfngzZZQuNe3A" name=",_Wnmp0B_3Ee6SILfbnF5lkQ" guid="-KPlyX-cspkfngzZZQuNe3A" changeDate="2023-07-11T20:31:27.593-0300">
+  <mainDescription>O refinamento de requisitos é uma atividade essencial que deve ocorrer após o planejamento da sprint e antes da&#xD;
+implementação do projeto. Seu objetivo é revisar e aprimorar os requisitos que já foram especificados, levando em&#xD;
+consideração as mudanças e evoluções ocorridas desde o início do ciclo de vida do processo. Durante essa etapa, são&#xD;
+identificados problemas nos requisitos, como ambiguidades, falta de detalhes, inconsistências ou desatualizações, que podem&#xD;
+prejudicar a implementação do software. Além disso, o refinamento de requisitos também visa identificar requisitos&#xD;
+adicionais ou modificados com base em feedbacks recebidos ou novas necessidades identificadas ao longo do tempo.</mainDescription>
+  <keyConsiderations>Ao final desse processo, espera-se obter uma visão clara e precisa dos requisitos do sistema, atualizados e alinhados com&#xD;
+as necessidades atuais, servindo como base sólida para o desenvolvimento.</keyConsiderations>
+  <sections xmi:id="_FblYMCBDEe6kKv6XI6o7_g" name="Revisar Requisitos Especificados" guid="_FblYMCBDEe6kKv6XI6o7_g">
+    <sectionDescription>Revisar os requisitos especificados.</sectionDescription>
+  </sections>
+  <sections xmi:id="_JVoL4CBDEe6kKv6XI6o7_g" name="Identificar Possíveis Empasses" guid="_JVoL4CBDEe6kKv6XI6o7_g">
+    <sectionDescription>Identificar possíveis problemas nos requisitos, como ambiguidades, falta de detalhes ou inconsistências</sectionDescription>
+  </sections>
+  <sections xmi:id="_LpTesCBDEe6kKv6XI6o7_g" name="Discussão e Análise" guid="_LpTesCBDEe6kKv6XI6o7_g">
+    <sectionDescription>Realizar discussões e colaborar com a equipe para esclarecer e aprimorar os requisitos.</sectionDescription>
+  </sections>
+  <sections xmi:id="_SPUJYCBDEe6kKv6XI6o7_g" name="Alteração e Inclusão de Requisitos" guid="_SPUJYCBDEe6kKv6XI6o7_g">
+    <sectionDescription>Identificar requisitos adicionais ou modificados, com base em feedbacks recebidos ou novas necessidades identificadas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_a4SKUCBDEe6kKv6XI6o7_g" name="Atualização ds Especificação" guid="_a4SKUCBDEe6kKv6XI6o7_g">
+    <sectionDescription>Atualizar a especificação dos requisitos, incluindo descrições mais claras e detalhadas, rastreabilidade e outros artefatos&#xD;
+relevantes.&lt;br /></sectionDescription>
+  </sections>
+  <purpose>Garantir que a qualidade dos requisitos especificados anteriormente acompanhe as eventuais mudanças e evoluções no projeto,&#xD;
+garantindo que estejam atualizados e alinhados com as necessidades atuais.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

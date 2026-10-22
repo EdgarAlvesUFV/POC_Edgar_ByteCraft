@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-9uOWW7a9ADmVsO69K9H5kw" name=",_t1kPgCBKEe6kKv6XI6o7_g" guid="-9uOWW7a9ADmVsO69K9H5kw" changeDate="2023-07-11T21:27:29.500-0300">
+  <mainDescription>A tarefa de Alinhamento com a Equipe de Desenvolvimento consiste em realizar uma reunião com a participação do Gerente de&#xD;
+Processo, Sênior Backend, Sênior Frontend, Sênior BD, Equipe de Devs Jr e Analistas de BD Jr. O objetivo é garantir que&#xD;
+todos os membros da equipe tenham uma compreensão comum das tarefas, prazos, expectativas e ferramentas a serem utilizadas,&#xD;
+permitindo uma execução eficiente e colaborativa do trabalho. A reunião também proporciona um espaço para esclarecer&#xD;
+dúvidas, obter feedbacks e promover a troca de conhecimento entre os membros da equipe.</mainDescription>
+  <keyConsiderations>Ao final, espera-se que a equipe de desenvolvimento esteja devidamente alinhada com as tarefas, expectativas, prazos e&#xD;
+ferramentas, facilitando o trabalho conjunto e a entrega de resultados de qualidade.</keyConsiderations>
+  <sections xmi:id="_7b47QCBKEe6kKv6XI6o7_g" name="Compartilhamento do Sprint Backlog" guid="_7b47QCBKEe6kKv6XI6o7_g">
+    <sectionDescription>Preparar e compartilhar antecipadamente as especificações das tarefas e a introdução das ferramentas que serão utilizadas&#xD;
+durante a sprint.</sectionDescription>
+  </sections>
+  <sections xmi:id="_6j48QCBKEe6kKv6XI6o7_g" name="Agendamento da Reunião" guid="_6j48QCBKEe6kKv6XI6o7_g">
+    <sectionDescription>Agendar a reunião de alinhamento com a equipe de desenvolvimento.</sectionDescription>
+  </sections>
+  <sections xmi:id="__9NKUCBKEe6kKv6XI6o7_g" name="Alinhamento na Reunião" guid="__9NKUCBKEe6kKv6XI6o7_g">
+    <sectionDescription>Realizar a reunião, fornecendo detalhes sobre as tarefas, tempo de desenvolvimento, detalhes de implementação, requisitos&#xD;
+específicos e apresentação das ferramentas.. Dar espaço para a equipe fazer perguntas, esclarecer dúvidas, discutir&#xD;
+desafios e fornecer feedbacks relacionados às tarefas e ferramentas</sectionDescription>
+  </sections>
+  <sections xmi:id="_EFWrcCBLEe6kKv6XI6o7_g" name="Registrar os Principais Pontos Discutidos" guid="_EFWrcCBLEe6kKv6XI6o7_g">
+    <sectionDescription>Registrar e documentar os principais pontos discutidos durante a reunião, bem como as instruções e orientações sobre as&#xD;
+ferramentas.</sectionDescription>
+  </sections>
+  <purpose>Alinhar as expectativas das tarefas, tempo de desenvolvimento, detalhes de implementação e introdução de ferramentas com a&#xD;
+equipe de desenvolvimento, visando manter todos os membros alinhados com os objetivos e garantir uma execução eficiente das&#xD;
+atividades durante a sprint.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

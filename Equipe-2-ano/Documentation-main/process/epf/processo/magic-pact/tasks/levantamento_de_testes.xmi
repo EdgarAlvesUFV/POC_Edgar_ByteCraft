@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-w7_Nhfz0LitM5JbdkFrxYw" name=",_1JQzsCBXEe6EjL-Wp4K8lQ" guid="-w7_Nhfz0LitM5JbdkFrxYw" changeDate="2023-07-11T23:00:58.807-0300">
+  <sections xmi:id="_TfX2gCBYEe6EjL-Wp4K8lQ" name="Analisar Funcionalidades para Teste" guid="_TfX2gCBYEe6EjL-Wp4K8lQ"/>
+  <sections xmi:id="_g1XAMCBYEe6EjL-Wp4K8lQ" name="Levantamento dos Testes" guid="_g1XAMCBYEe6EjL-Wp4K8lQ">
+    <sectionDescription>Levantamento de testes a partir das regras de negócio e requisitos não funcionais.</sectionDescription>
+  </sections>
+  <purpose>Ter uma lista de requisitos que serão testados para poder direcionar a atenção da realização dos testes.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

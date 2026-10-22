@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ContentDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-abN_unGj4psK2tNWrISOnA" name="new_role_set,_l0luoB95Ee6u_o5iYIaa_g" guid="-abN_unGj4psK2tNWrISOnA" authors="Gabriel Bonfim" changeDate="2023-07-10T20:32:37.555-0300" changeDescription="Criação do roleset" version="1.0">
+  <mainDescription>O responsável pelo Versionamento e Integração do projeto detém as tarefas de Gerente de Testes, Gerente de Configuração e&#xD;
+Gerente de Mudanças</mainDescription>
+</org.eclipse.epf.uma:ContentDescription>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:ArtifactDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-molNAtVlIztg46UmiWvcGg" name="reuniao_de_alinhamento,_WZHQICAeEe67Xue8GEjBvA" guid="-molNAtVlIztg46UmiWvcGg" changeDate="2023-07-11T14:29:08.683-0300">
+  <mainDescription>&lt;p>&#xD;
+    A Reunião de Alinhamento ocorre rapidamente no início de toda sprint de desenvolvimento, dessa forma os alunos das&#xD;
+    equipes podem sanar dúvidas com relação ao sprint backlog e receber um esclarecimento e direcionamento da execução de&#xD;
+    suas tarefas.&#xD;
+&lt;/p></mainDescription>
+  <purpose>&lt;p>&#xD;
+    Objetivo é explicar o sprint backlog diretamente aos envolvidos das equipes, de forma que o entendimento fique claro do&#xD;
+    que deve ser feito.&#xD;
+&lt;/p></purpose>
+</org.eclipse.epf.uma:ArtifactDescription>

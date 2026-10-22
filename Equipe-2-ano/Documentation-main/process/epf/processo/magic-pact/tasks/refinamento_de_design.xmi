@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-wiSTtTgkIMhof7UvLJ4Sig" name="refinamento_de_design,_WX75sCBFEe6kKv6XI6o7_g" guid="-wiSTtTgkIMhof7UvLJ4Sig" changeDate="2023-07-11T20:48:33.859-0300">
+  <mainDescription>O refinamento de design é uma atividade crucial que ocorre após o refinamento de análise e antes da implementação do&#xD;
+sistema. Seu objetivo principal é aprimorar o design do sistema, aprofundando a análise e detalhando a arquitetura e os&#xD;
+componentes. Durante essa etapa, são revisados os artefatos de design existentes, incluindo diagramas, modelos e&#xD;
+especificações. É realizada uma análise detalhada do design, buscando identificar oportunidades de melhoria, otimização e&#xD;
+simplificação. Além disso, é importante garantir a conformidade com as melhores práticas de design, padrões arquiteturais e&#xD;
+requisitos não funcionais. O refinamento de design também envolve a definição de interfaces claras e precisas entre os&#xD;
+componentes do sistema, bem como a consideração de aspectos de desempenho, segurança e escalabilidade.</mainDescription>
+  <keyConsiderations>Ao final desse processo, espera-se ter um design refinado, bem estruturado e eficiente, que servirá como base sólida para a&#xD;
+implementação do sistema.</keyConsiderations>
+  <sections xmi:id="_ebrtsCBFEe6kKv6XI6o7_g" name="Revisar Artefatos de Design" guid="_ebrtsCBFEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-4bcf7dd0-7fff-9714-ad07-3df046d86d93&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Revisar os artefatos de design existentes, incluindo diagramas, modelos e especificações.&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_9GSZ0CBFEe6kKv6XI6o7_g" name="Análise Detalhada do Design" guid="_9GSZ0CBFEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-ef203bf4-7fff-2ac3-a441-b2c74e9efa85&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Realizar uma análise detalhada do design, identificando oportunidades de melhoria, otimização e simplificação. &lt;b id=&quot;docs-internal-guid-0ea1d858-7fff-85b6-1196-79384f75e00a&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Verificar a conformidade do design com as melhores práticas, padrões arquiteturais e requisitos não&#xD;
+funcionais.&lt;/span>&lt;/b>&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_Qw_C0CBGEe6kKv6XI6o7_g" name="Definição de Interfaces" guid="_Qw_C0CBGEe6kKv6XI6o7_g">
+    <sectionDescription>&lt;b id=&quot;docs-internal-guid-dd159018-7fff-b085-8121-cfecc593fa62&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Definir interfaces claras e precisas entre os componentes do sistema. &lt;b id=&quot;docs-internal-guid-ecb6cd30-7fff-025f-51c4-f4546d901b88&quot; style=&quot;FONT-WEIGHT: normal&quot;>&lt;span style=&quot;FONT-SIZE: 12pt; TEXT-DECORATION: none; FONT-FAMILY: Arial; FONT-VARIANT: normal; VERTICAL-ALIGN: baseline; WHITE-SPACE: pre-wrap; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: transparent&quot;>&#xD;
+Considerar aspectos de desempenho, segurança e escalabilidade no design.&lt;/span>&lt;/b>&lt;/span>&lt;/b></sectionDescription>
+  </sections>
+  <sections xmi:id="_b0iP0CBGEe6kKv6XI6o7_g" name="Documentação de Alterações" guid="_b0iP0CBGEe6kKv6XI6o7_g">
+    <sectionDescription>Documentar as análises realizadas e atualizar a documentação de design, se necessário.</sectionDescription>
+  </sections>
+  <purpose>Realizar uma análise detalhada do design do sistema, identificando oportunidades de melhoria, refinando a arquitetura e os&#xD;
+componentes, e garantindo a qualidade e eficiência do design.</purpose>
+</org.eclipse.epf.uma:TaskDescription>

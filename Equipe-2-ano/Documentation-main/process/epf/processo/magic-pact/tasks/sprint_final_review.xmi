@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.epf.uma:TaskDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:epf="http://www.eclipse.org/epf" epf:version="1.5.1" xmi:id="-Ibz3m9XONfwTmRGu_kdzfA" name=",_bSr-oCBUEe6EjL-Wp4K8lQ" guid="-Ibz3m9XONfwTmRGu_kdzfA" changeDate="2023-07-11T22:36:57.950-0300">
+  <mainDescription>A Revisão Final da Sprint é uma reunião realizada ao término da sprint para revisar e avaliar o trabalho realizado pela&#xD;
+equipe. Durante a reunião, os membros da equipe, incluindo os Sêniores Back-end, Sêniores Front-end, Sêniores BD, Equipe de&#xD;
+Devs Jr e Equipe de Analistas Jr BD, se reúnem para revisar os resultados obtidos em relação aos objetivos estabelecidos. A&#xD;
+revisão envolve a análise das tarefas concluídas, os desafios enfrentados, o progresso alcançado e os aprendizados&#xD;
+adquiridos ao longo da sprint. É um momento para fornecer feedback sobre o trabalho realizado, destacando os pontos&#xD;
+positivos e identificando áreas de melhoria. Além disso, a reunião tem o propósito de identificar oportunidades de&#xD;
+aprimoramento para o próximo ciclo, incluindo possíveis ajustes no processo, ferramentas utilizadas ou abordagens adotadas.&#xD;
+A troca de feedback e a reflexão sobre o desempenho da equipe são fundamentais para a evolução contínua do processo de&#xD;
+desenvolvimento.</mainDescription>
+  <keyConsiderations>Ao final da reunião, é elaborada uma ata que registra as discussões, feedbacks e ações acordadas durante a revisão.</keyConsiderations>
+  <sections xmi:id="_n0PasCBUEe6EjL-Wp4K8lQ" name="Apuração da Ata Anterior" guid="_n0PasCBUEe6EjL-Wp4K8lQ">
+    <sectionDescription>Revisar a ata da reunião anterior e os registros das tarefas concluídas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_rmJmECBUEe6EjL-Wp4K8lQ" name="Discussão de Resultados" guid="_rmJmECBUEe6EjL-Wp4K8lQ">
+    <sectionDescription>Discutir os resultados alcançados em relação aos objetivos definidos para a sprint.</sectionDescription>
+  </sections>
+  <sections xmi:id="_tbtZgCBUEe6EjL-Wp4K8lQ" name="Apresentação de Feedback" guid="_tbtZgCBUEe6EjL-Wp4K8lQ">
+    <sectionDescription>Fornecer feedback sobre o trabalho realizado, reconhecendo os pontos fortes e apontando áreas de melhoria. Analisar os&#xD;
+desafios enfrentados durante a sprint e compartilhar os aprendizados adquiridos.</sectionDescription>
+  </sections>
+  <sections xmi:id="_EDsTACBVEe6EjL-Wp4K8lQ" name="Identificação de Otimizações" guid="_EDsTACBVEe6EjL-Wp4K8lQ">
+    <sectionDescription>Identificar oportunidades de aprimoramento para o próximo ciclo, considerando possíveis ajustes no processo, ferramentas ou&#xD;
+abordagens adotadas.</sectionDescription>
+  </sections>
+  <sections xmi:id="_uV7mECBUEe6EjL-Wp4K8lQ" name="Registrar Discussões" guid="_uV7mECBUEe6EjL-Wp4K8lQ">
+    <sectionDescription>Registrar as discussões, feedbacks e ações acordadas em uma ata de reunião.</sectionDescription>
+  </sections>
+  <purpose>Avaliar o trabalho realizado ao longo da sprint, revisar os resultados alcançados, fornecer feedback e identificar&#xD;
+oportunidades de melhoria para o próximo ciclo.</purpose>
+</org.eclipse.epf.uma:TaskDescription>
