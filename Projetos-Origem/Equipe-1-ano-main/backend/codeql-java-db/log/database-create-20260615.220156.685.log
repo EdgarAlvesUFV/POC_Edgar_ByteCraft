@@ -1,0 +1,612 @@
+[2026-06-15 22:01:56] This is codeql database create codeql-java-db --language=java --source-root=. --overwrite
+[2026-06-15 22:01:56] Log file was started late.
+[2026-06-15 22:01:56] [PROGRESS] database create> Initializing database at C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\codeql-java-db.
+[2026-06-15 22:01:56] Running plumbing command: codeql database init --overwrite --language=java --extractor-options-verbosity=1 --qlconfig-file=C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\qlconfig.yml --source-root=C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend --allow-missing-source-root=false --allow-already-existing -- C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\codeql-java-db
+[2026-06-15 22:01:56] Calling plumbing command: codeql resolve languages --extractor-options-verbosity=1 --format=betterjson
+[2026-06-15 22:01:56] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from C:\Users\Edgar\Downloads\TCC\codeql\.codeqlmanifest.json
+[2026-06-15 22:01:56] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\actions\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\cpp\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\csharp\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\csv\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\go\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\html\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\java\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\javascript\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\properties\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\python\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\ruby\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\rust\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\swift\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\xml\codeql-extractor.yml.
+[2026-06-15 22:01:57] [DETAILS] resolve languages> Parsing C:\Users\Edgar\Downloads\TCC\codeql\yaml\codeql-extractor.yml.
+[2026-06-15 22:01:57] Plumbing command codeql resolve languages completed:
+                      {
+                        "aliases" : {
+                          "c" : "cpp",
+                          "c++" : "cpp",
+                          "c-c++" : "cpp",
+                          "c-cpp" : "cpp",
+                          "c#" : "csharp",
+                          "java-kotlin" : "java",
+                          "kotlin" : "java",
+                          "javascript-typescript" : "javascript",
+                          "typescript" : "javascript"
+                        },
+                        "extractors" : {
+                          "actions" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\actions",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\cpp",
+                              "extractor_options" : {
+                                "scale_timeouts" : {
+                                  "title" : "Value to scale compiler introspection timeouts with",
+                                  "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-9]+"
+                                },
+                                "log_verbosity" : {
+                                  "title" : "Verbosity of the extractor logging",
+                                  "description" : "Set the verbosity of the extractor logging to 'quiet' (0), 'normal' (1), 'chatty' (2), or 'noisy' (3). The default is 'normal'.\n",
+                                  "type" : "string",
+                                  "pattern" : "[0-3]"
+                                }
+                              }
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+                                  "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "binlog" : {
+                                  "title" : "Binlog",
+                                  "description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+                                  "type" : "array"
+                                },
+                                "buildless_dependency_dir" : {
+                                  "title" : "The path where buildless (standalone) extraction should keep dependencies.",
+                                  "description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\csv"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\go",
+                              "extractor_options" : {
+                                "extract_tests" : {
+                                  "title" : "Whether to include Go test files in the CodeQL database.",
+                                  "description" : "A value indicating whether Go test files should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "extract_vendor_dirs" : {
+                                  "title" : "Whether to include Go vendor directories in the CodeQL database.",
+                                  "description" : "A value indicating whether Go vendor directories should be included in the CodeQL database. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\html"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis. This accepts glob patterns that are supported by Java's 'getPathMatcher' implementation.\n",
+                                  "type" : "string"
+                                },
+                                "add_prefer_source" : {
+                                  "title" : "Whether to always prefer source files over class files.",
+                                  "description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction (experimental).",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "buildless_dependency_dir" : {
+                                  "title" : "The path where buildless (standalone) extraction should keep dependencies.",
+                                  "description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+                                  "type" : "string"
+                                },
+                                "minimize_dependency_jars" : {
+                                  "title" : "Whether to rewrite and minimize downloaded JAR dependencies (experimental).",
+                                  "description" : "If 'true', JAR dependencies downloaded during extraction will be rewritten to remove unneeded data, such as method bodies. The default is 'false'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\javascript",
+                              "extractor_options" : {
+                                "skip_types" : {
+                                  "title" : "Skip type extraction for TypeScript",
+                                  "description" : "Whether to skip the extraction of types in a TypeScript application",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\properties"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\python",
+                              "extractor_options" : {
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Python extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    }
+                                  }
+                                },
+                                "python_executable_name" : {
+                                  "title" : "Controls the name of the Python executable used by the Python extractor.",
+                                  "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(py|python|python3)$"
+                                }
+                              }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) 'zstd' (to write Zstandard-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|zstd)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ],
+                          "rust" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\rust",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (to write gzip-compressed TRAP) 'zstd' (to write Zstandard-compressed TRAP) and 'none' (the default, to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|zstd)$"
+                                    }
+                                  }
+                                },
+                                "cargo_target_dir" : {
+                                  "title" : "Directory to use for cargo output files.",
+                                  "description" : "This value is an optional path to use as `CARGO_TARGET_DIR` for the internal cargo commands the extractor uses. Pointing it to a persistent directory may reduce execution time of consecutive extractor runs. By default, a new scratch directory is used for each run.\n",
+                                  "type" : "string"
+                                },
+                                "cargo_target" : {
+                                  "title" : "Target architecture",
+                                  "description" : "Target architecture to use for analysis, analogous to `cargo --target`. By default the host architecture is used.\n",
+                                  "type" : "string"
+                                },
+                                "cargo_features" : {
+                                  "title" : "Cargo features to turn on",
+                                  "description" : "Comma-separated list of features to turn on. By default all features are enabled. If any features are specified, then only those features are enabled. The `default` feature must be explicitly specified if only default features are desired. Can be repeated.\n",
+                                  "type" : "array"
+                                },
+                                "cargo_cfg_overrides" : {
+                                  "title" : "Cargo cfg overrides",
+                                  "description" : "Comma-separated list of cfg settings to enable, or disable if prefixed with `-`. Can be repeated.\n",
+                                  "type" : "array"
+                                },
+                                "logging" : {
+                                  "title" : "Options pertaining to logging.",
+                                  "description" : "Options pertaining to logging.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "verbosity" : {
+                                      "title" : "Extractor logging verbosity level.",
+                                      "description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+                                      "type" : "string",
+                                      "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+                                    },
+                                    "flamegraph" : {
+                                      "title" : "[Experimental] File path for write flame graph log",
+                                      "description" : "Collect flame graph data using the `tracing-flame` crate. To render a flame graph or chart, run the `inferno-flamegraph` command. See also: https://crates.io/crates/tracing-flame\n",
+                                      "type" : "string"
+                                    }
+                                  }
+                                },
+                                "extract_dependencies_as_source" : {
+                                  "title" : "Extract dependencies as source code",
+                                  "description" : "Extract the full source code of dependencies instead of only extracting signatures.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "swift" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\swift"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\xml"
+                            }
+                          ],
+                          "yaml" : [
+                            {
+                              "extractor_root" : "C:\\Users\\Edgar\\Downloads\\TCC\\codeql\\yaml"
+                            }
+                          ]
+                        }
+                      }
+[2026-06-15 22:01:57] [PROGRESS] database init> Calculating baseline information in C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend
+[2026-06-15 22:01:57] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2026-06-15 22:01:57] [DETAILS] database init> Running command in C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend: C:\Users\Edgar\Downloads\TCC\codeql\tools\win64\scc.exe --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2026-06-15 22:01:57] Using configure-baseline script C:\Users\Edgar\Downloads\TCC\codeql\actions\tools\configure-baseline.cmd.
+[2026-06-15 22:01:57] [PROGRESS] database init> Running command in C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend: [C:\Users\Edgar\Downloads\TCC\codeql\actions\tools\configure-baseline.cmd]
+[2026-06-15 22:01:57] [SPAMMY] database init> Ignored an additional 2 files when processing baseline information for YAML due to paths and paths-ignore configuration.
+[2026-06-15 22:01:57] [SPAMMY] database init> Found 71 baseline files for java.
+[2026-06-15 22:01:57] [SPAMMY] database init> Found 0 baseline files for actions.
+[2026-06-15 22:01:57] [PROGRESS] database init> Calculated baseline information for languages: actions, java (139ms).
+[2026-06-15 22:01:57] [PROGRESS] database init> Resolving extractor java.
+[2026-06-15 22:01:57] [DETAILS] database init> Found candidate extractor root for java: C:\Users\Edgar\Downloads\TCC\codeql\java.
+[2026-06-15 22:01:57] [PROGRESS] database init> Successfully loaded extractor Java/Kotlin (java) from C:\Users\Edgar\Downloads\TCC\codeql\java.
+[2026-06-15 22:01:57] [PROGRESS] database init> Created skeleton CodeQL database at C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\codeql-java-db. This in-progress database is ready to be populated by an extractor.
+[2026-06-15 22:01:57] Plumbing command codeql database init completed.
+[2026-06-15 22:01:57] Using autobuild script C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd.
+[2026-06-15 22:01:57] [DETAILS] database create> Detected autobuild command for Java/Kotlin: C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd.
+[2026-06-15 22:01:57] [PROGRESS] database create> Running build command: [C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd]
+[2026-06-15 22:01:57] Running plumbing command: codeql database trace-command --working-dir=C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend --index-traceless-dbs --no-db-cluster -- C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\codeql-java-db C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd
+[2026-06-15 22:01:57] [PROGRESS] database trace-command> Running command in C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend: [C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd]
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] Build directory is C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\.
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] Found no Java toolchains in a toolchains file, inspecting environment variables...
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] Found no Java toolchains in a toolchains file, inspecting environment variables...
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] Gradle's sourceCompatibility setting recommends Java version 17.0.0.
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] The Spring Boot plugin version in use recommends Java version 17.0.0.
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] [WARN] The suggested lower bound Java version is 17.0.0, but no version that is equal to or greater than that is available on this system.
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] Identified 17.0.12 as the newest version of Java supported by the version of Gradle in use. The system default of 17.0.12 is compatible with this.
+[2026-06-15 22:01:58] [build-stdout] [2026-06-15 22:01:58] [autobuild] > gradlew.bat --no-daemon -S -Dorg.gradle.dependency.verification=off -Dorg.gradle.warning.mode=none --init-script "C:\Users\Edgar\Downloads\TCC\codeql\java\tools\setup-proxy.gradle" --init-script "C:\\Users\\Edgar\\AppData\\Local\\Temp\\semmleTempDir4606105137043543016\\init.gradle" clean
+[2026-06-15 22:02:00] [build-stdout] [2026-06-15 22:02:00] [autobuild] To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+[2026-06-15 22:02:01] [build-stdout] [2026-06-15 22:02:01] [autobuild] Daemon will be stopped at the end of the build 
+[2026-06-15 22:02:02] [build-stdout] [2026-06-15 22:02:02] [autobuild] Reusing configuration cache.
+[2026-06-15 22:02:03] [build-stdout] [2026-06-15 22:02:03] [autobuild] > Task :clean
+[2026-06-15 22:02:03] [build-stdout] [2026-06-15 22:02:03] [autobuild] BUILD SUCCESSFUL in 4s
+[2026-06-15 22:02:03] [build-stdout] [2026-06-15 22:02:03] [autobuild] 1 actionable task: 1 executed
+[2026-06-15 22:02:03] [build-stdout] [2026-06-15 22:02:03] [autobuild] Configuration cache entry reused.
+[2026-06-15 22:02:03] [build-stdout] [2026-06-15 22:02:03] [autobuild] > gradlew.bat --no-daemon -S -Dorg.gradle.dependency.verification=off -Dorg.gradle.warning.mode=none --init-script "C:\Users\Edgar\Downloads\TCC\codeql\java\tools\setup-proxy.gradle" --init-script "C:\\Users\\Edgar\\AppData\\Local\\Temp\\semmleTempDir4606105137043543016\\init.gradle" testClasses
+[2026-06-15 22:02:05] [build-stdout] [2026-06-15 22:02:05] [autobuild] To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+[2026-06-15 22:02:06] [build-stdout] [2026-06-15 22:02:06] [autobuild] Daemon will be stopped at the end of the build 
+[2026-06-15 22:02:08] [build-stdout] [2026-06-15 22:02:08] [autobuild] Reusing configuration cache.
+[2026-06-15 22:02:09] [build-stdout] [2026-06-15 22:02:09] [autobuild] > Task :processTestResources NO-SOURCE
+[2026-06-15 22:02:09] [build-stdout] [2026-06-15 22:02:09] [autobuild] > Task :processResources
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] > Task :compileJava
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\configuration\SecurityConfig.java:31: error: cannot find symbol
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]         .csrf(Customizer.withDefaults());
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]               ^
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   symbol:   variable Customizer
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   location: class SecurityConfig
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Note: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\Teste.java uses or overrides a deprecated API.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 1 error
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] > Task :compileJava FAILED
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] [Incubating] Problems report is available at: file:///C:/Users/Edgar/Documents/GitHub/POC_Edgar_ByteCraft/Equipe-1-ano-main/backend/build/reports/problems/problems-report.html
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] FAILURE: Build failed with an exception.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] * What went wrong:
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Execution failed for task ':compileJava'.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] > Compilation failed; see the compiler output below.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   Note: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\Teste.java uses or overrides a deprecated API.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   Note: Recompile with -Xlint:deprecation for details.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\configuration\SecurityConfig.java:31: error: cannot find symbol
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]           .csrf(Customizer.withDefaults());
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]                 ^
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]     symbol:   variable Customizer
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]     location: class SecurityConfig
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   1 error
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] * Try:
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] > Check your code and dependencies to fix the compilation error(s)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] > Run with --scan to get full insights.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] * Exception is:
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileJava'.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.lang.Thread.run(Thread.java:842)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Note: C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\Teste.java uses or overrides a deprecated API.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] C:\Users\Edgar\Documents\GitHub\POC_Edgar_ByteCraft\Equipe-1-ano-main\backend\src\main\java\app\configuration\SecurityConfig.java:31: error: cannot find symbol
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]         .csrf(Customizer.withDefaults());
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]               ^
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   symbol:   variable Customizer
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild]   location: class SecurityConfig
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 1 error
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:206)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:55)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:244)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.Either$Right.fold(Either.java:175)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 2 actionable tasks: 2 executed
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] Configuration cache entry reused.
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] 	at java.base/java.lang.Thread.run(Thread.java:842)
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [autobuild] BUILD FAILED in 6s
+[2026-06-15 22:02:11] [build-stdout] [2026-06-15 22:02:11] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\Edgar\Downloads\TCC\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, gradlew.bat, --no-daemon, -S, -Dorg.gradle.dependency.verification=off, -Dorg.gradle.warning.mode=none, --init-script, C:\Users\Edgar\Downloads\TCC\codeql\java\tools\setup-proxy.gradle, --init-script, C:\Users\Edgar\AppData\Local\Temp\semmleTempDir4606105137043543016\init.gradle, testClasses])
+[2026-06-15 22:02:11] [ERROR] Spawned process exited abnormally (code 1; tried to run: [C:\Users\Edgar\Downloads\TCC\codeql\tools\win64\tracer.exe, C:\Users\Edgar\Downloads\TCC\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd])
+[2026-06-15 22:02:11] Exception caught at top level: Exit status 1 from command: [C:\Users\Edgar\Downloads\TCC\codeql\tools\win64\runner.exe, cmd.exe, /C, type, NUL, &&, C:\Users\Edgar\Downloads\TCC\codeql\java\tools\autobuild.cmd]
+                      com.semmle.cli2.Commandline.executeAndCheckResult(Commandline.java:170)
+                      com.semmle.cli2.Commandline.runWithoutReturn(Commandline.java:123)
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:227)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:126)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:201)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:185)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:113)
